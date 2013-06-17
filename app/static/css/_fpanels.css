@@ -1,0 +1,360 @@
+#fpanels {
+	margin-top: -35px;
+}
+#fpanels .head{
+	background: url("../img/backgrounds/mint.jpg") no-repeat;
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 288px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#fpanels .head2 {
+	background: url("../img/backgrounds/baby-blue.jpg") no-repeat;	
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 288px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+#fpanels .head3 {
+	background: url("../img/backgrounds/mango.jpg") no-repeat;	
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 288px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+#fpanels .head4 {
+	background: url("../img/backgrounds/silver.jpg") no-repeat;	
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 288px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+#fpanels .head .text {
+	color:#000;
+}
+
+#fpanels .head .line{
+	margin-left: 0;
+}
+#fpanels .text h4{
+	margin: 0 0 35px 0;
+	/*color: #fff;*/
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 38px;
+	text-shadow: 1px 1px 0px #2A284D;
+}
+#fpanels .text p{
+	/*color: #fff;*/
+	font-size: 16px;
+	line-height: 24px;
+}
+#fpanels .text p span{
+	font-style: normal;
+	text-transform: uppercase;
+}
+#fpanels .count{
+	margin: 0;
+	float: right;
+}
+#fpanels .count .box{
+	text-align: center;
+	float: right;
+	margin-left: -10px;
+}
+#fpanels .count .first{
+	margin: 0 0 0 90px;
+}
+#fpanels .count .circle{
+	height: 98px;
+	width: 98px;
+	text-align: center;
+	border-radius: 100%;
+	margin-bottom: 8px;
+	background: rgba(0,0,0,0.5);
+}
+#fpanels .count .circle span{
+	color: #fff;
+	display: inline-block;
+	font-size: 33px;
+	margin-top: 36px;
+	font-weight: bold;
+}
+#fpanels .count p{
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+#fpanels .email_wrapp .wrapp{
+	background: #fff;
+	width: 98%;
+	margin: 0 auto 60px;
+	padding: 32px 0 21px;
+	height: 50px;
+	float: none;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 1px 1px 2px 0px rgb(206, 206, 206);
+}
+#fpanels .email_wrapp .line{
+	margin-left: 0;
+}
+#fpanels .email_wrapp .wrapp p{
+	float: left;
+	font-size: 17px;
+	margin: 8px 0px 0px 48px;
+}
+#fpanels .email_wrapp .wrapp input[type="text"]{
+	float: left;
+	font-size: 16px;
+	border-radius: 3px;
+	height: 27px;
+	margin-bottom: 0;
+	width: 31.5%;
+	margin-left: 30px;
+}
+#fpanels .email_wrapp .wrapp a.send{
+	text-transform: uppercase;
+	color: #fff;
+	border: 0 none;
+	box-shadow: none;
+	margin: 0px 70px 0 0;
+	background: #1189D9;
+	font-weight: bold;
+	text-shadow: none;
+	padding: 8px 10px;
+	font-size: 14px;
+	float: right;
+	-webkit-transition: background linear .2s, box-shadow linear .2s;
+	-moz-transition: background linear .2s, box-shadow linear .2s;
+	-o-transition: background linear .2s, box-shadow linear .2s;
+	transition: background linear .2s, box-shadow linear .2s;
+}
+#fpanels .email_wrapp .wrapp a.send:hover{
+	background: #252528;
+}
+#fpanels .social{
+	text-align: center;
+	margin: 0px;
+}
+#fpanels .social p{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 21px;
+	margin: 0 10px 0 0;
+	bottom: 9px;
+	position: relative;
+}
+#fpanels .social a {
+	margin-left: 10px;
+	display: inline-block;
+}
+#fpanels .social a span{
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+}
+#fpanels .social span.ico1,
+#fpanels .social span.ico1h{
+	background-position: 0px 0px;
+}
+#fpanels .social span.ico2,
+#fpanels .social span.ico2h{
+	background-position: -37px 0px;
+}
+#fpanels .social span.ico3,
+#fpanels .social span.ico3h{
+	background-position: -75px 0px;
+}
+#fpanels .social span.ico4,
+#fpanels .social span.ico4h{
+	background-position: -112px -1px;
+}
+#fpanels .social span.ico5,
+#fpanels .social span.ico5h{
+	background-position: -151px 0px;
+}
+#fpanels .social span.ico6,
+#fpanels .social span.ico6h{
+	background-position: -188px -1px;
+}
+#fpanels .social span.ico7,
+#fpanels .social span.ico7h{
+	background-position: -226px 0px;
+}
+#fpanels .social a:hover span.icons{
+	display: none;
+}
+#fpanels .social a:hover span.iconsh{
+	display: inline-block;
+}
+#fpanels .social span.iconsh{
+	display: none;
+}
+#fpanels .icons{
+	background: url('../img/socialicons2.png') no-repeat;
+	width: 265px;
+	height: 36px;
+}
+#fpanels .iconsh{
+	background: url('../img/socialicons_h.png') no-repeat;
+	width: 265px;
+	height: 36px;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+@media (min-width: 980px) {
+}
+@media (max-width: 979px) {
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	#fpanels .head{
+		padding-top: 80px;
+		height: 310px;
+	}
+	#fpanels .count{
+		text-align: center;
+		width: 37%;
+	}
+	#fpanels .count .box{
+		margin: 0 0 13px 0;
+	}
+	#fpanels .count .first{
+		margin: 0;
+	}
+	#fpanels .count .circle{
+		float: none;
+		display: inline-block;
+	}	
+	#fpanels .email_wrapp .wrapp{
+		text-align: center;
+		height: auto;
+		padding: 30px 0 30px;
+	}
+	#fpanels .email_wrapp .wrapp p{
+		float: none;
+		margin: 0 0 19px 0;
+	}
+	#fpanels .email_wrapp .wrapp input[type="text"]{
+		float: none;
+		width: 43%;
+		margin: 0 1px 0 0;	
+	}
+	#fpanels .email_wrapp .wrapp a.send{
+		float: none;
+		margin: 0 0 0 7px;
+	}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {	
+	#fpanels .head{
+		text-align: center;
+		background: none;
+		margin-bottom: 80px;
+		padding-top: 70px;
+		height: auto;
+	}
+	#fpanels .text{
+		margin-bottom: 20px;
+	}
+	#fpanels .text h4{
+		color: #333;
+		text-shadow:none;
+	}
+	#fpanels .text p{
+		color: #333;
+	}
+	#fpanels .count .first{
+		margin: 0;
+	}
+	#fpanels .count .box{
+		float: none;
+		display: inline-block;
+	}
+	#fpanels .count .circle{
+		background: rgba(0,0,0,0.8);
+		width: 100px;
+		height: 100px;
+	}
+	#fpanels .count .circle span{
+		font-size: 35px;
+		margin-top: 39px;
+	}
+	#fpanels .count p{
+		color: #333;
+	}
+	#fpanels .email_wrapp .wrapp{
+		background: transparent;
+		box-shadow: none;
+		padding: 0;
+		width: 100%;
+	}
+	#fpanels .email_wrapp .wrapp p{
+		float: none;
+		margin: 0 0 20px 0;
+	}
+	#fpanels .email_wrapp .wrapp input[type="text"]{
+		float: left;
+		width: 77%;
+		margin-left: 0;
+	}
+	#fpanels .email_wrapp .wrapp a.send{
+		float: left;
+		margin-left: 22px;
+		margin-right: 0;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#fpanels .count .circle{
+		height: 73px;
+		width: 73px;
+	}
+	#fpanels .count .circle span{
+		margin-top: 26px;
+		font-size: 30px;
+	}
+	#fpanels .email_wrapp .wrapp input[type="text"]{
+		width: 70%;
+	}
+	#fpanels .social p{
+		display: block;
+		margin: 16px 0 3px 0;
+	}
+	#fpanels .social a{
+		margin-left: 0px;
+	}
+}
