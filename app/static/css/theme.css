@@ -21,6 +21,25 @@ textarea {
 	font-family: 'Lato', Helvetica;
 }
 
+/* ALEX ADDED STYLES 
+--------------------------- */
+@font-face {
+    font-family: 'MathleteSkinny';
+    src: url('font/Mathlete-Skinny-webfont.eot');
+    src: url('font/Mathlete-Skinny-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Mathlete-Skinny-webfont.woff') format('woff'),
+         url('font/Mathlete-Skinny-webfont.ttf') format('truetype'),
+         url('font/Mathlete-Skinny-webfont.svg#MathleteSkinny') format('svg'),
+         url('font/Mathlete-Skinny.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    position: absolute;
+    z-index: 20;
+}
+
 /* Navbar
 -------------------------------------------------- */
 body.pull_top {
