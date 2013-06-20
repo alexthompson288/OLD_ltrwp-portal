@@ -40,6 +40,18 @@ textarea {
     z-index: 20;
 }
 
+.video-frame{
+	width: 385px;
+	height: 320px;
+	background: url("../img/features_video_frame.png") no-repeat;
+}
+
+.video-frame iframe{
+	padding-top: 80px;
+	padding-left: 62.5px;
+	padding-right: 62.5px;
+}
+
 /* Navbar
 -------------------------------------------------- */
 body.pull_top {
@@ -65,7 +77,7 @@ header {
 }
 .navbar.navbar-inverse .navbar-inner {  
     padding: 10px 0px 10px 0px;
-    background: #252528;    
+    background: #66cc99;    
 }
 .navbar.navbar-inverse .navbar-inner.sticky {
     background: rgba(0,0,0,0.8);

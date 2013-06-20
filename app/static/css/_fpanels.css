@@ -2,7 +2,8 @@
 	margin-top: -35px;
 }
 #fpanels .head{
-	background: url("../img/backgrounds/mint.jpg") no-repeat;
+	background-color: #f29d0a;
+	background: url("../img/features_overview_map_texture.png") no-repeat, url("../img/backgrounds/mango.jpg") no-repeat;
 	display: block;
 	padding-top: 60px;
 	padding-bottom: 60px;
