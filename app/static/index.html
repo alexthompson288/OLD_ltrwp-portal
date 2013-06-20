@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Business Template</title>
+    <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -10,6 +10,8 @@
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/bootstrap-overrides.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/_fpanels.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">
@@ -50,8 +52,65 @@
       </div>
     </div>
 
+
+    <section id="feature_slider" class="">
+        <!-- 
+            Each slide is composed by <img> and .info
+            - .info's position is customized with css in index.css
+            - each <img> parallax effect is declared by the following params inside its class:
+            
+            example: class="asset left-472 sp600 t120 z3"
+            left-472 means left: -472px from the center
+            sp600 is speed transition
+            t120 is top to 120px
+            z3 is z-index to 3
+            Note: Maintain this order of params
+
+            For the backgrounds, you can combine from the bgs folder :D
+        -->
+        <article class="slide" id="showcasing" style="background: url('img/home_hero_bg_1.jpg') repeat-x top center;">
+            <img class="asset left-30 sp600 t120 z1" src="img/home_hero_item_1.png" />
+            <div class="info">
+                <h3>Give your child the magic of reading.</h3>
+                <p>Learn to read with Pip is a digital education programme designed to help your child master the most important skill they will ever learn: how to read.</p>
+                <p>Download for free</p>
+                <p>Find out more</p>
+            </div>
+        </article>
+        <article class="slide" id="ideas" style="background: url('img/home_hero_bg_2.jpg') repeat-x top center;">
+            <div class="info">
+                <h3>Making reading fun. Learn to ready by learning to enjoy reading.</h3>
+                <p>Download for free</p>
+            </div>
+            <img class="asset left-210 sp600 t213 z2" src="img/home_hero_item_2.png" />
+        </article>
+        <article class="slide" id="tour" style="background: url('img/home_hero_bg_3.jpg') repeat-x top center;">
+            <img class="asset left-210 sp600 t213 z2" src="img/home_hero_item_3.png" />
+            <div class="info">
+                <h3>It’s simple. Learn to read with Pip and his friends once a day.</h3>
+                <p>Learn to read with Pip is a digital education programme designed to help your child master the most important skill they will ever learn: how to read.</p>
+                <p>Download for free</p>
+                <p>Find out more</p>
+            </div>
+        </article>
+    </section>
+
     <div id="fpanels">
       
+          <div class="head head4" style="height: 350px">
+            <div class="container">
+
+                <div class="span9 text">
+                    <h4>THE PROGRAMME</h4>
+                    <p>With over 240 fun daily learning sessions, the programme takes the young learner on a journey building and developing their early knowledge of the alphabet all the way up to independently reading, understanding and enjoying stories.</p>
+                    <p>Read more</p>
+                </div>
+
+                <div class="span2 text">
+                </div>
+
+            </div>
+        </div>
 
         <div class="container" style="padding-top: 40px;">
             <div class="row social">
@@ -130,5 +189,6 @@
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/theme.js"></script>
 
+    <script type="text/javascript" src="js/index-slider.js"></script>
 </body>
 </html>
