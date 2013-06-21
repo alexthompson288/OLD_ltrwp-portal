@@ -2,17 +2,17 @@
 	margin-top: -35px;
 }
 #fpanels .head{
-	background-color: #f29d0a;
-	background: url("../img/features_overview_map_texture.png") no-repeat, url("../img/backgrounds/mango.jpg") no-repeat;
+	background-color: yellow;
+	/* background: url("../img/features_overview_map_texture.png") no-repeat, url("../img/backgrounds/mango.jpg") no-repeat; */
 	display: block;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	height: 288px;
 	width: 100%;
-	-webkit-background-size: cover;
+	/* -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover; */
 }
 
 #fpanels .head2 {

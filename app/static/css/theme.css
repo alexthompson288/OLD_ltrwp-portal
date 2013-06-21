@@ -35,13 +35,17 @@ textarea {
     font-style: normal;
 }
 
+h1,h2,h3,h4{
+	font-family: 'MathleteSkinny';
+}
+
 .logo {
     position: absolute;
     z-index: 20;
 }
 
 .video-frame{
-	width: 385px;
+	width: 410px;
 	height: 320px;
 	background: url("../img/features_video_frame.png") no-repeat;
 }
@@ -50,6 +54,10 @@ textarea {
 	padding-top: 80px;
 	padding-left: 62.5px;
 	padding-right: 62.5px;
+}
+
+.second-nav-bar{
+	width: 960px;
 }
 
 /* Navbar
