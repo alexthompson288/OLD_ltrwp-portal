@@ -1,8 +1,22 @@
 #fpanels {
 	margin-top: -35px;
 }
+
 #fpanels .head{
-	background-color: yellow;
+	
+	background-color: #fef1c3;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 288px;
+	width: 100%;
+	/* -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; */
+}
+
+#fpanels .head1{
+	background-color: #f5ab0e;
 	/* background: url("../img/features_overview_map_texture.png") no-repeat, url("../img/backgrounds/mango.jpg") no-repeat; */
 	display: block;
 	padding-top: 60px;
@@ -16,7 +30,7 @@
 }
 
 #fpanels .head2 {
-	background: url("../img/backgrounds/baby-blue.jpg") no-repeat;	
+		
 	display: block;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -44,7 +58,7 @@
 }
 
 #fpanels .head4 {
-	background: url("../img/backgrounds/magicbook_background_texture.jpg") no-repeat;	
+		
 	display: block;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -54,8 +68,23 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 }
+
+#fpanels .head5 {
+	background-color: #57abe0;	
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 288px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
 
 #fpanels .head .text {
 	color:#000;

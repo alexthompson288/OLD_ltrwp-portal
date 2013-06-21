@@ -39,6 +39,10 @@ h1,h2,h3,h4{
 	font-family: 'MathleteSkinny';
 }
 
+h3{
+	font-size: 45px;
+}
+
 .padding-small{
 	padding: 15px;
 }
@@ -46,6 +50,18 @@ h1,h2,h3,h4{
 .logo {
     position: absolute;
     z-index: 20;
+}
+
+.shadow-top{
+	background: url("../img/download_shadow_container.png") top center no-repeat;
+}
+
+.yellow-background{
+	background-color: #fbd238;
+}
+
+.magicbook-background{
+	background-color: #fef1c3;
 }
 
 .video-frame{
@@ -103,6 +119,10 @@ h1,h2,h3,h4{
 
 .download-purple{
 	background: url("../img/download_purple.png") repeat-x;
+}
+
+.border-bottom-yellow{
+	border-bottom: 5px solid #fbd238;
 }
 
 /* Navbar
@@ -202,10 +222,10 @@ header {
 -------------------------------------------------- */
 #footer {
 	min-height: 260px;
-	margin-top: 140px;
+	
 	background-color: #fff;
 	color: #000;
-	padding-top: 35px;
+	
 }
 #footer .footer_header {
 	color: rgb(196, 196, 196);
@@ -214,6 +234,11 @@ header {
 	font-size: 25px;
 	margin-bottom: 40px;
 	margin-left: 15px; 
+}
+
+/* custom shadow at top in footer */
+#footer .magicbook-background{
+	background: url("../img/download_shadow_container.png") top center no-repeat;
 }
 
 /* recent posts */
@@ -436,6 +461,75 @@ header {
 #footer .info .touch ul li{
 	display: inline-block;
 	margin-left: 30px;
+}
+
+#footer .social{
+	text-align: center;
+	margin: 0px;
+}
+#footer .social p{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 21px;
+	margin: 0 10px 0 0;
+	bottom: 9px;
+	position: relative;
+}
+#footer .social a {
+	margin-left: 10px;
+	display: inline-block;
+}
+#footer .social a span{
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+}
+#footer .social span.ico1,
+#fpanels .social span.ico1h{
+	background-position: 0px 0px;
+}
+#footer .social span.ico2,
+#footer .social span.ico2h{
+	background-position: -37px 0px;
+}
+#footer .social span.ico3,
+#footer .social span.ico3h{
+	background-position: -75px 0px;
+}
+#footer .social span.ico4,
+#footer .social span.ico4h{
+	background-position: -112px -1px;
+}
+#footer .social span.ico5,
+#footer .social span.ico5h{
+	background-position: -151px 0px;
+}
+#footer .social span.ico6,
+#footer .social span.ico6h{
+	background-position: -188px -1px;
+}
+#footer .social span.ico7,
+#footer .social span.ico7h{
+	background-position: -226px 0px;
+}
+#footer .social a:hover span.icons{
+	display: none;
+}
+#footer .social a:hover span.iconsh{
+	display: inline-block;
+}
+#footer .social span.iconsh{
+	display: none;
+}
+#footer .icons{
+	background: url('../img/socialicons2.png') no-repeat;
+	width: 265px;
+	height: 36px;
+}
+#footer .iconsh{
+	background: url('../img/socialicons_h.png') no-repeat;
+	width: 265px;
+	height: 36px;
 }
 
 /* Global
