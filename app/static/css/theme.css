@@ -43,6 +43,10 @@ h3{
 	font-size: 45px;
 }
 
+.padding-top-50{
+	padding-top: 50px;
+}
+
 .padding-small{
 	padding: 15px;
 }
@@ -123,6 +127,16 @@ h3{
 
 .border-bottom-yellow{
 	border-bottom: 5px solid #fbd238;
+}
+
+/* Login page
+-------------------------------------------------- */
+
+.not-ready-yet{
+	height: 700px;
+	background-color: #fef1c3;
+	text-align: center;
+	padding-top: 120px;
 }
 
 /* Navbar
