@@ -56,6 +56,10 @@ h3{
 	padding-top: 50px;
 }
 
+.padding-top-none{
+	padding-top: 0px !important;
+}
+
 .padding-small{
 	padding: 15px;
 }
@@ -113,6 +117,12 @@ h3{
 
 .second-nav-bar{
 	width: 960px;
+}
+
+/*  Story page 
+--------------------------------------------------*/
+.story-box-video{
+	height: 400px;
 }
 
 /* Download page 
