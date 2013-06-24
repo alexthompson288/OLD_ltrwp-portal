@@ -8,6 +8,11 @@ body {
 	font-family: 'Lato', sans-serif !important;
 	padding-top: 107px;
 }
+
+p{
+	font-size: 16pt;
+	line-height: 20pt;
+}
 @media (max-width: 979px) {
 	body { padding-top: 0 !important; }
 }
@@ -43,6 +48,10 @@ h3{
 	font-size: 45px;
 }
 
+.no-fixed-height{
+	height:auto !important;
+}
+
 .padding-top-50{
 	padding-top: 50px;
 }
@@ -51,9 +60,31 @@ h3{
 	padding: 15px;
 }
 
+.red-border{
+	border: 3px solid rgb(180,47,47);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.label-bg{
+	background-image: url('../img/label_container_bg.png'), url('../img/label_container_fold.png');
+	background-position: left, top right;
+	background-repeat: repeat-x, no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover; 
+}
+
 .logo {
     position: absolute;
     z-index: 20;
+}
+
+.font-30{
+	font-size: 26pt;
+	line-height: 1.4em;
 }
 
 .shadow-top{
@@ -76,7 +107,7 @@ h3{
 
 .video-frame iframe{
 	padding-top: 80px;
-	padding-left: 62.5px;
+	padding-left: 78.5px;
 	padding-right: 62.5px;
 }
 
@@ -137,6 +168,45 @@ h3{
 	background-color: #fef1c3;
 	text-align: center;
 	padding-top: 120px;
+}
+
+
+/* Beta Testing page 
+------------------------------ */
+
+#mc_embed_signup .btn{
+	display: block;
+	margin-bottom: 60px;
+}
+
+.email-signup{
+	background-color: ;
+}
+
+/* About us pages
+-------------------------------------------------- */
+
+.team-picture{
+	height: 375px;
+	text-align: center;
+	font-color: white;
+	padding-top: 80px;
+}
+
+.team-picture-second-row{
+	padding-top: 220px;
+}
+
+.card-1{
+	background: url('../img/team_card_1.png') no-repeat;
+}
+
+.card-2{
+	background: url('../img/team_card_2.png') no-repeat;
+}
+
+.card-3{
+	background: url('../img/team_card_3.png') no-repeat;
 }
 
 /* Navbar

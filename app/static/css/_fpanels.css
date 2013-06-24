@@ -15,6 +15,17 @@
 	background-size: cover; */
 }
 
+#fpanels .beta-testing{
+	background-color: #fef1c3;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	width: 100%;
+	/* -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; */
+}
+
 #fpanels .head1{
 	background-color: #f5ab0e;
 	/* background: url("../img/features_overview_map_texture.png") no-repeat, url("../img/backgrounds/mango.jpg") no-repeat; */

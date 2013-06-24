@@ -97,6 +97,11 @@
     display: none;
     z-index: 10;
 }
+
+.slide#tour .third-slide {
+    position: absolute;
+    top: 60px !important;
+}
 .slide#showcasing .info h2 {
     color: #fff;
     font-size: 50px;
