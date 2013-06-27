@@ -52,6 +52,21 @@ h3{
 	height:auto !important;
 }
 
+.orange-bg{
+	background: #ffab05; /* Old browsers */
+background: -moz-linear-gradient(top, #ffab05 0%, #f76d04 0%, #f2b900 93%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffab05), color-stop(0%,#f76d04), color-stop(93%,#f2b900)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffab05 0%,#f76d04 0%,#f2b900 93%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffab05 0%,#f76d04 0%,#f2b900 93%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffab05 0%,#f76d04 0%,#f2b900 93%); /* IE10+ */
+background: linear-gradient(to bottom, #ffab05 0%,#f76d04 0%,#f2b900 93%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffab05', endColorstr='#f2b900',GradientType=0 ); /* IE6-9 */
+}
+
+.padding-30{
+	padding: 30px;
+}
+
 .padding-top-50{
 	padding-top: 50px;
 }
@@ -69,6 +84,9 @@ h3{
 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
      -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          -webkit-border-radius: 12px; 
+  		-moz-border-radius: 12px; 
+  		border-radius: 12px; 
 }
 
 .label-bg{
@@ -286,7 +304,7 @@ header {
 }
 .navbar-inverse .nav > li > a {
     /*color: rgb(177, 177, 177);*/
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 1px 0 rgba(0,0,0,.5);
@@ -556,6 +574,11 @@ header {
 }
 
 /*Inner Footer*/
+
+#footer p{
+	font-size: 14px;
+}
+
 #footer .info{
 	margin-bottom: 10px;
 	margin-left: 0;
@@ -679,6 +702,8 @@ header {
 	width: 180px;
 	height: 34px;
 }
+
+
 
 /* Responsive
 -------------------------------------------------- */
