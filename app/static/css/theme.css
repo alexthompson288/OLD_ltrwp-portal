@@ -86,6 +86,24 @@ h3{
     z-index: 20;
 }
 
+#logo-symbol{
+	width: 145px;
+	
+	float: left;
+}
+
+a#logo-symbol-link{
+	background: url('../img/logo_top_corner_sprite.png') no-repeat;
+	width: 145px;
+	height: 75px;
+}
+
+
+
+a#logo-symbol-link:hover{
+	background-position: 0 -98px;
+}
+
 .font-30{
 	font-size: 26pt;
 	line-height: 1.4em;
@@ -109,6 +127,8 @@ h3{
 	background: url("../img/features_video_frame.png") no-repeat;
 }
 
+
+
 .video-frame iframe{
 	padding-top: 80px;
 	padding-left: 78.5px;
@@ -117,6 +137,13 @@ h3{
 
 .second-nav-bar{
 	width: 960px;
+}
+
+/*  Homepage
+--------------------------------------------------*/
+
+.small-device-banner{
+	display: none;
 }
 
 /*  Story page 
@@ -737,4 +764,78 @@ header {
 
 /* Icons
 -------------------------------------------------- */
+
+
+/* Media queries - Iphone
+------------------*/
+@media (max-width: 480px) {
+
+	#logo-symbol{
+	width: 145px;
+	float: left;
+	}
+
+	a#logo-symbol-link{
+	background: url('../img/logo_top_corner_40px_height_sprite.png') no-repeat;
+	width: 58px;
+	height: 18px;
+	}
+
+
+
+	a#logo-symbol-link:hover{
+	background-position: 0 -40px;
+	}
+
+	.red-border{
+		margin-top: 20px;
+		padding: 20px;
+	}
+
+	.small-device-banner{
+		display: block;
+	}
+
+
+}
+
+/* Media queries - Ipad
+------------------*/
+
+@media (max-width : 768px){
+	.small-device-banner{
+		display: block;
+	}
+
+		.red-border{
+		margin-top: 20px;
+		padding: 20px;
+	}
+
+	#fpanels .head{
+		margin-bottom: 0px !important;
+		margin-top: 0px;
+		padding: 0px;
+	}
+
+	#fpanels .head1{
+		margin-bottom: 0px !important;
+		margin-top: 0px;
+		padding-top: 30px !important;
+		padding-bottom: 0px !important;
+	}
+
+	.video-frame{
+		margin-left:auto;
+		margin-right: auto;
+	}
+}
+
+/* Media queries - 1024px
+------------------*/
+.red-border{
+		margin: 10px 20px;
+		padding: 20px;
+	}
+
 
