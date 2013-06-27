@@ -339,6 +339,13 @@ header {
 	margin:0;
 }
 
+/* Characters
+-------------------------------------------------- */
+
+.sky-blue-background{
+	background: url('../img/sky_background.png') repeat-x top center;
+}
+
 /* Footer
 -------------------------------------------------- */
 #footer {
@@ -770,22 +777,7 @@ header {
 ------------------*/
 @media (max-width: 480px) {
 
-	#logo-symbol{
-	width: 145px;
-	float: left;
-	}
-
-	a#logo-symbol-link{
-	background: url('../img/logo_top_corner_40px_height_sprite.png') no-repeat;
-	width: 58px;
-	height: 18px;
-	}
-
-
-
-	a#logo-symbol-link:hover{
-	background-position: 0 -40px;
-	}
+	
 
 	.red-border{
 		margin-top: 20px;
@@ -795,6 +787,12 @@ header {
 	.small-device-banner{
 		display: block;
 	}
+
+	.container{
+		padding: 20px;
+	}
+
+
 
 
 }
@@ -815,7 +813,8 @@ header {
 	#fpanels .head{
 		margin-bottom: 0px !important;
 		margin-top: 0px;
-		padding: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px !important;
 	}
 
 	#fpanels .head1{
@@ -829,6 +828,18 @@ header {
 		margin-left:auto;
 		margin-right: auto;
 	}
+
+	.curriculum-map-image{
+		display: none;
+	}
+
+	.container{
+		padding: 20px;
+	}
+
+	.sky-blue-background{
+		background: none;
+	}
 }
 
 /* Media queries - 1024px
@@ -838,4 +849,28 @@ header {
 		padding: 20px;
 	}
 
+	/* Media queries - 980px
+------------------*/
 
+@media (max-width : 980px){
+.red-border{
+		margin: 10px 20px;
+		padding: 20px;
+	}
+
+	#logo-symbol{
+	width: 145px;
+	float: left;
+	}
+
+	a#logo-symbol-link{
+	background: url('../img/logo_top_corner_40px_height_sprite.png') no-repeat;
+	width: 58px;
+	height: 18px;
+	}
+
+	a#logo-symbol-link:hover{
+	background-position: 0 -40px;
+	}
+
+}
