@@ -164,6 +164,10 @@ a#logo-symbol-link:hover{
 	display: none;
 }
 
+.iphone-beta-test{
+	display:none;
+}
+
 /*  Story page 
 --------------------------------------------------*/
 .story-box-video{
@@ -815,6 +819,28 @@ header {
 
 	.container{
 		padding: 20px;
+	}
+
+	.iphone-beta-test{
+		display: block;
+	}
+
+	.video-frame{
+		background: url("../img/features_video_frame_iphone.png") no-repeat;
+	}
+
+	.video-frame iframe {
+		padding-top: 64px;
+		padding-left: 55.5px;
+		padding-right: 62.5px;
+	}
+
+	.red-border{
+		display:none;
+	}
+
+	#fpanels.homepage .head{
+		padding-top: 0px !important;
 	}
 
 
