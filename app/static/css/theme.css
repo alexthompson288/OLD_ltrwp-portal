@@ -851,10 +851,14 @@ header {
 /* Media queries - Ipad
 ------------------*/
 
-@media (max-width : 768px){
-	.small-device-banner{
+@media (max-width : 767px){
+			.small-device-banner{
 		display: block;
+		}
 	}
+
+@media (max-width : 768px){
+	
 
 		.red-border{
 		margin-top: 20px;
