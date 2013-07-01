@@ -45,7 +45,7 @@
 	display: block;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	height: 288px;
+	height: 340px;
 	width: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -324,7 +324,7 @@
 	#fpanels .head{
 		text-align: center;
 		background: none;
-		margin-bottom: 80px;
+		margin-bottom: 85px;
 		padding-top: 70px;
 		height: auto;
 	}
