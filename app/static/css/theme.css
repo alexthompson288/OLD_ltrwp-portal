@@ -139,6 +139,10 @@ a#logo-symbol-link:hover{
 	background: url("../img/download_shadow_container.png") top center no-repeat;
 }
 
+.shadow-top-960{
+	background: url("../img/download_shadow_container_960px.png") top center no-repeat;
+}
+
 .yellow-background{
 	background-color: #fbd238;
 }
