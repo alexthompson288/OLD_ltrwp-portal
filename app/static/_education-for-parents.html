@@ -37,7 +37,8 @@
                     <ul class="nav pull-right">
 						<li><a href="_features.html">FEATURES</a></li>
                         <li><a href="_download.html">DOWNLOAD</a></li>
-						<li><a href="_about.html">ABOUT</a></li>
+                        <li><a href="_about-us.html">ABOUT</a></li>
+                        <li><a href="_education-for-parents.html">FOR PARENTS</a></li>
                         <li><a href="_login.html">LOGIN</a></li>
                     </ul>
                 </div>
@@ -75,33 +76,67 @@
     <div id="fpanels">
         <div class="head no-fixed-height">
             <div class="container">
-                <div class="span8 text">
-                    <h4><a name="overview">How to read (for parents)</a></h4>
-                    <p>
-                        Of course as parents we all know how to read and you're doing it right now without thinking.  But how do we teach it?  We believe that the strongest readers are those who are exposed to letters, words and stories at home as well as in the classroom.</p>
+                <div class="row">
+                    <div class="span8 text">
+                        <h4><a name="overview">How to read (for parents)</a></h4>
+                        <p>
+                            Of course as parents we all know how to read and you're doing it right now without thinking.  But how do we teach it?  We believe that the strongest readers are those who are exposed to letters, words and stories at home as well as in the classroom.</p>
 
 
-                        <p>These articles aim to clarify (and demystify!) the most important processes and skills a child must master to become a fluent reader so they can give them the best chance of mastering and enjoying reading from home.  These include phonics (phonemes and graphemes), blending (reading), segmenting (spelling), keywords, cvc words, rhyming, alternative spelling and alternative pronunciation. </p>
-                    
+                            <p>These articles aim to clarify (and demystify!) the most important processes and skills a child must master to become a fluent reader so they can give them the best chance of mastering and enjoying reading from home.  These include phonics (phonemes and graphemes), blending (reading), segmenting (spelling), keywords, cvc words, rhyming, alternative spelling and alternative pronunciation. </p>
+                        
+                    </div>
+                    <div class="span4">
+                        <img src="img/parent_image.png">
+                    </div>
                 </div>
             </div>
         </div>
 
-    <div id="fpanels">
-        <div class="head head1 no-fixed-height">
+    <div id="fpanels" class='parent-education'>
+        <div class="head head1 no-fixed-height light-green-bg">
             <div class="container">
                 <div class="row">
                 <div class="span5">
-                    <img id="play-audio" style="margin-top: 180px;"src="assets/fruitmachine_website/fruitmachine_body_total.png">
-                    
-                  
-  
+                    <div class="position-relative fruitmachine-letters">
+                        <img id="play-audio" style=""src="assets/fruitmachine_website/fruitmachine_body_dog_with_arrows.png">
                         
-                    
+                        
 
+                       
+                        <audio id="audio1" src="assets/fruitmachine_website/d.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-3-single" onClick="EvalSound('audio1')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                            
+
+                            <audio id="audio2" src="assets/fruitmachine_website/o.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-4-single" onClick="EvalSound('audio2')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                            
+
+
+                            <audio id="audio3" src="assets/fruitmachine_website/g.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-5-single" onClick="EvalSound('audio3')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                           
+
+
+                        <audio id="audio4" src="assets/fruitmachine_website/dog.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-play" onClick="EvalSound('audio4')"><img src="assets/fruitmachine_website/play_button.png"></a>  
+                    </div>
+   
+                   <script>
+                        function EvalSound(soundobj) {
+                            var thissound=document.getElementById(soundobj);
+                            thissound.play();
+                        }
+                    </script>
+
+                    <br />
+                    <img src="assets/website_mnemonics.png">
 
                 </div>
-
 
                 <div class="span7 text">
                     <h4><a name="phonics">What is phonics?</a></h4>
@@ -119,6 +154,8 @@
                         <p>Children who learn using synthetic phonics become more independent readers and are able to have a go at new words working from sound alone, whereas those using analytic phonics are more dependent on having prior knowledge of families of words.
                         </p>
                 </div>
+
+               
             </div>
             </div>
         </div>
@@ -126,27 +163,57 @@
 
         <div class="head  no-fixed-height top-shadow">
             <div class="container">
-                <div class="span8 text">
-                    <h4><a name="">Phonemes: small units of sound</a></h4>
-                        <p>A phoneme is basically a sound.  It is the smallest distinct unit of sound and multiple sounds (or phonemes) are blended together to make up words and there are 44 of them in the English language.</p>
-                        <p>the word 'cat' contains three distinct sounds 'c', 'a' and 't'.  However, the word 'fear' contains just two distinct phonemes (or sounds): 'f' and 'ear'.</p>
-                        <p>This all seems simple enough.  Phonemes are sounds that are mapped to letters when they are written down.  If only it was all that simple!</p>
-                        <p>English is not a totally phonetic language and many sounds can be spelt using different letter combinations and the same letter combinations can make different sounds.  Think of the sentence 'the soldier wound the bandage around his wound'!
-                        <p>You can find a great website which demonstrates the letter-sound (grapheme-phoneme) correspondance <a href="http://www.teachingenglish.org.uk/activities/phonemic-chart" target="_blank">here</a>.</p>
+                <div class="row">
+                    <div class="span8 text">
+                        <h4><a name="phonemes">Phonemes: small units of sound</a></h4>
+                            <p>A phoneme is basically a sound.  It is the smallest distinct unit of sound and multiple sounds (or phonemes) are blended together to make up words and there are 44 of them in the English language.</p>
+                            <p>the word 'cat' contains three distinct sounds 'c', 'a' and 't'.  However, the word 'fear' contains just two distinct phonemes (or sounds): 'f' and 'ear'.</p>
+                            <p>This all seems simple enough.  Phonemes are sounds that are mapped to letters when they are written down.  If only it was all that simple!</p>
+                            <p>English is not a totally phonetic language and many sounds can be spelt using different letter combinations and the same letter combinations can make different sounds.  Think of the sentence 'the soldier wound the bandage around his wound'!
+                            <p>You can find a great website which demonstrates the letter-sound (grapheme-phoneme) correspondance <a href="http://www.teachingenglish.org.uk/activities/phonemic-chart" target="_blank">here</a>.</p>
+                    </div>
+                    <div class="span4 position-relative">
+                        <div id="try-phoneme-div">
+                            <img id="press-phoneme-arrow-down" src='assets/fruitmachine_website/arrow_handdrawn_phoneme_arrow_down.png'>
+                            
+                            <div class="phoneme-buttons-container">
+                                <audio id="audio5" src="assets/fruitmachine_website/h.wav"  preload="auto" autobuffer>
+                                    </audio>       
+                                <a class="fruitmachine-button fruitmachine-button-e" onClick="EvalSound('audio5')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+
+                                <audio id="audio6" src="assets/fruitmachine_website/e.wav"  preload="auto" autobuffer>
+                                    </audio>       
+                                <a class="fruitmachine-button fruitmachine-button-f" onClick="EvalSound('audio6')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+
+                                <audio id="audio7" src="assets/fruitmachine_website/ll.wav"  preload="auto" autobuffer>
+                                    </audio>       
+                                <a class="fruitmachine-button fruitmachine-button-g" onClick="EvalSound('audio7')"><img src="assets/fruitmachine_website/button_master_double_statea.png"></a>
+
+                                <audio id="audio8" src="assets/fruitmachine_website/ow.wav"  preload="auto" autobuffer>
+                                    </audio>       
+                                <a class="fruitmachine-button fruitmachine-button-h" onClick="EvalSound('audio8')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-         <div class="head head5 no-fixed-height">
+         <div class="head head5 no-fixed-height light-green-bg">
             <div class="container">
                 <div class="row">
-                    <div class="span5"></div>
+                    <div class="span5">
+                        <img src="assets/fruitmachine_website/letter_room_index.png">                
+                    </div>
                     <div class="span7 text">
-                    <h4><a name="">Graphemes: letters - single, double or even triple!</a></h4>
+                    <h4><a name="graphemes">Graphemes: letters - single, double or even triple!</a></h4>
                         <p>If phonemes are sounds, then graphemes are letters.  Phonics is all about understanding and practising the correspondance between letters and sounds.  Some sounds are made by single letters (which are single letter graphemes), like the 'a' in 'angry ant'.  However, some sounds (phonemes) are represented in written text by a combination of more than one letter, like the 'th' in 'three thumbs' or the 'air' in 'hairy fairy'. When a grapheme consists of two letters it is called a digraph (like 'ea' in 'sea'.  When it has three letters it is a trigraph (like the 'tch' in 'watch').  You can find a great website which demonstrates the letter-sound (grapheme-phoneme) correspondance <a href="http://www.teachingenglish.org.uk/activities/phonemic-chart" target="_blank">here</a>.</p>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
@@ -154,26 +221,47 @@
 
         <div class="head head2 top-shadow no-fixed-height">
             <div class="container">
-                <div class="span6 text curriculum-map-image">
-                    <img src="img/features_curriculum_map.png">
-                </div>
-                <div class="span5 text">
-                    <h4><a name="blending">Reading (or blending)</a></h4>
-                    <p>Blending is one of the skills children need to develop when learning to read with phonics. A child needs to be able to look at the letter symbols (or graphemes) in a word, hear the sounds (or phonemes) those letter symbols represent, blend those sounds together and hear the whole word that those sounds build.</p>
-                    
-                    <p>A simple example would be the word 'dog'.  The skill of blending allows the child to recognize the three graphemes that make up the word 'dog' and match those letter symbols with their approriate sound.  The child then says out loud the sounds 'd', 'o', 'g' and blends them together to create the word 'dog'.  This system allows the child to see the word 'dog' on a page and associate it with the concept of a dog which they already know.</p>
-                    
-                    <p>A similar yet slightly more complex example would be the word 'book'.  The only difference is that 'oo' in book is a single sound made up of two letter symbols (digraph).  The child has to learn that 'book' is blended with 'b', 'oo', 'k'.</p>
-                    
-                    <p>Blending needs practice – some children grasp the skill straight away and others can take much longer. The two main reasons why children struggle to hear the word when they have said the sounds are that they don’t know the letter sounds well enough (so they pause to think between letters) which makes it hard to recognize the whole word or the letter sounds are not being pronounced correctly.
-                      </p>
-                </div>
+                <div class="row">
+                    <div class="span6 text">
+                        <div id="try-blending-div">
+                            <img id="press-phoneme-arrow-down" src='assets/fruitmachine_website/arrow_handdrawn_phoneme_arrow_down.png'>
+                            
+                            <div class="phoneme-buttons-container">
+                                <audio id="audio9" src="assets/fruitmachine_website/r.wav"  preload="auto" autobuffer>
+                                    </audio>       
+                                <a class="fruitmachine-button fruitmachine-button-e" onClick="EvalSound('audio9')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
 
+                                <audio id="audio10" src="assets/fruitmachine_website/ee.wav"  preload="auto" autobuffer>
+                                    </audio>       
+                                <a class="fruitmachine-button fruitmachine-button-f" onClick="EvalSound('audio10')"><img src="assets/fruitmachine_website/button_master_double_statea.png"></a>
+
+                                <audio id="audio12" src="assets/fruitmachine_website/d.wav"  preload="auto" autobuffer>
+                                    </audio>       
+                                <a class="fruitmachine-button fruitmachine-button-h" onClick="EvalSound('audio12')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+
+
+
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="span5 text">
+                        <h4><a name="blending">Reading (or blending)</a></h4>
+                        <p>Blending is one of the skills children need to develop when learning to read with phonics. A child needs to be able to look at the letter symbols (or graphemes) in a word, hear the sounds (or phonemes) those letter symbols represent, blend those sounds together and hear the whole word that those sounds build.</p>
+                        
+                        <p>A simple example would be the word 'dog'.  The skill of blending allows the child to recognize the three graphemes that make up the word 'dog' and match those letter symbols with their approriate sound.  The child then says out loud the sounds 'd', 'o', 'g' and blends them together to create the word 'dog'.  This system allows the child to see the word 'dog' on a page and associate it with the concept of a dog which they already know.</p>
+                        
+                        <p>A similar yet slightly more complex example would be the word 'book'.  The only difference is that 'oo' in book is a single sound made up of two letter symbols (digraph).  The child has to learn that 'book' is blended with 'b', 'oo', 'k'.</p>
+                        
+                        <p>Blending needs practice – some children grasp the skill straight away and others can take much longer. The two main reasons why children struggle to hear the word when they have said the sounds are that they don’t know the letter sounds well enough (so they pause to think between letters) which makes it hard to recognize the whole word or the letter sounds are not being pronounced correctly.
+                          </p>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-        <div class="head head3 no-fixed-height">
+        <div class="head no-fixed-height light-green-bg">
             <div class="container">
                 <div class="span5 text"><h4><a name="segmenting">Spelling (or segmenting)</a></h4>
                     <p>
@@ -222,7 +310,7 @@
         </div>
 
 
-        <div class="head head5 no-fixed-height">
+        <div class="head head5 no-fixed-height light-green-bg">
             <div class="container">
                 <div class="span5 text">
                     <h4><a name="magicbook">CVC, CVCC, CCVC...</a></h4>
@@ -244,7 +332,9 @@
         <div class="head head2 top-shadow no-fixed-height">
             <div class="container">
                 <div class="span6 text">
-                    <img src="img/parent_image.png">
+                    <audio id="audio15" src="assets/fruitmachine_website/mnemonic_m.wav"  preload="auto" autobuffer>
+                    </audio>       
+                    <a class="fruitmachine-button fruitmachine-button-e" onClick="EvalSound('audio15')"><img src="assets/fruitmachine_website/mnemonic_m.png"></a>
                 </div>
                 <div class="span5 text">
                     <h4><a name="parents">Alliteration, oral blending and rhyming</a></h4>
@@ -270,7 +360,7 @@
             </div>
         </div>
 
-        <div class="head head1 no-fixed-height">
+        <div class="head head1 no-fixed-height light-green-bg">
             <div class="container">
                 <div class="span5 text">
                     <h4><a name="games">Other things</a></h4>

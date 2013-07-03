@@ -37,7 +37,8 @@
                     <ul class="nav pull-right">
 						<li><a href="_features.html">FEATURES</a></li>
                         <li><a href="_download.html">DOWNLOAD</a></li>
-						<li><a href="_about.html">ABOUT</a></li>
+                        <li><a href="_about-us.html">ABOUT</a></li>
+                        <li><a href="_education-for-parents.html">FOR PARENTS</a></li>
                         <li><a href="_login.html">LOGIN</a></li>
                     </ul>
                 </div>
@@ -76,6 +77,43 @@
             <p>Our mission is to make the best quality digital education products and make them affordable and accessible to lots of people.</p>
             <p>We have built <strong>Learn to read with Pip</strong> because reading is the gateway to all knowledge - the most important skill we ever master.</p>
             <p>Computers, iPads and other tablets can show rich animations, play music and sound and respond to our touch.  They are the most amazing learning tool.  We want to make products that take advantage of the potential of these amazing machines to make learning as fun and engaging as we possibly can.</p>
+
+            <div class="span3"></div>
+
+            <div class="span5 position-relative fruitmachine-letters">
+
+                    <img id="play-audio" src="assets/fruitmachine_website/fruitmachine_body_read_with_arrows.png">
+                    
+                    
+                     <audio id="audio20" src="assets/fruitmachine_website/r.wav"  preload="auto" autobuffer>
+                    </audio>       
+                    <a class="fruitmachine-button fruitmachine-button-2-single" onClick="EvalSound('audio20')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                   
+                    <audio id="audio2" src="assets/fruitmachine_website/ee.wav"  preload="auto" autobuffer>
+                    </audio>       
+                        <a class="fruitmachine-button fruitmachine-button-3-double" onClick="EvalSound('audio2')"><img src="assets/fruitmachine_website/button_master_double_statea.png"></a>
+
+                        <audio id="audio3" src="assets/fruitmachine_website/d.wav"  preload="auto" autobuffer>
+                    </audio>       
+                        <a class="fruitmachine-button fruitmachine-button-5-single" onClick="EvalSound('audio3')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                        
+
+                     <audio id="audio24" src="assets/fruitmachine_website/read.wav"  preload="auto" autobuffer>
+                    </audio>       
+                        <a class="fruitmachine-button fruitmachine-button-play" onClick="EvalSound('audio24')"><img src="assets/fruitmachine_website/play_button.png"></a>  
+
+
+                    
+
+                    
+                        
+                   <script>
+                        function EvalSound(soundobj) {
+                            var thissound=document.getElementById(soundobj);
+                            thissound.play();
+                        }
+                    </script>  
+                </div>
 
 
             </div>
@@ -147,8 +185,8 @@
                     <div class="span6 text-center">
                         <h3 class="font-30"><a href="http://www.facebook.com/learntoreadwithpip">Facebook</a></h3>
                         <h3 class="font-30"><a href="http://www.twitter.com/learntoreadwithpip">Twitter</a></h3>
-                        <h3 class="font-30">alex@alexjbthompson.com</h3>
-                        <h3>Learn to read with Pip<br />177 Kings Cross Rd<br />London WC1X 9BZ</h3>
+                        <p>alex@alexjbthompson.com</p>
+                        <p>Learn to read with Pip<br />177 Kings Cross Rd<br />London WC1X 9BZ</p>
                     </div>
 
                 </div>

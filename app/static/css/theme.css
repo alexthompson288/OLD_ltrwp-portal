@@ -52,6 +52,14 @@ h3{
 	font-size: 45px;
 }
 
+.position-relative{
+	position: relative;
+}
+
+.font-red{
+	color: rgb(231, 82, 82);
+}
+
 .no-fixed-height{
 	height:auto !important;
 }
@@ -174,6 +182,108 @@ a#logo-symbol-link:hover{
 
 .iphone-beta-test{
 	display:none;
+}
+
+  /*Parent education page
+  ------------------------------------------------*/
+
+.parent-education#fpanels .light-green-bg {
+	background-color: rgb(255, 255, 218);
+} 
+
+.fruitmachine-button{
+	;
+}
+
+.fruitmachine-button-1-single{
+	position: absolute;
+	bottom: 182px;
+	right: 224px;
+}
+
+.fruitmachine-button-2-single{
+	position: absolute;
+	bottom: 182px;
+	right: 190px;
+}
+
+.fruitmachine-button-3-single{
+	position: absolute;
+	bottom: 182px;
+	right: 166px;
+}
+
+.fruitmachine-button-4-single{
+	position: absolute;
+	bottom: 182px;
+	right: 138px;
+}
+
+.fruitmachine-button-5-single{
+	position: absolute;
+	bottom: 182px;
+	right: 108px;
+}
+
+.fruitmachine-button-6-single{
+	position: absolute;
+	bottom: 182px;
+	right: 198px;
+}
+
+.fruitmachine-button-2-double{
+	position: absolute;
+	bottom: 182px;
+	right: 198px;
+}
+
+.fruitmachine-button-3-double{
+	position: absolute;
+	bottom: 188px;
+	right: 138px;
+}
+
+.fruitmachine-button-play{
+	position: absolute;
+	bottom: 282px;
+	right: 142px;
+}
+
+
+
+#try-phoneme-div{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	padding-left: 30px;
+}
+
+.phoneme-buttons-container{
+	width:200px;
+	height: 39px;
+}
+
+#press-phoneme-arrow{
+	position: absolute;
+	bottom:-140px;
+	right: 140px;
+}
+
+#press-grapheme-arrow{
+	position: absolute;
+	bottom:240px;
+	right: 245px;
+}
+
+#press-grapheme-down{
+	position: absolute;
+	
+}
+
+#press-word-arrow{
+	position: absolute;
+	bottom:300px;
+	right: 40px;
 }
 
 /*  Story page 
