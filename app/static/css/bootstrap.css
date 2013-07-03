@@ -3968,6 +3968,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav > .pull-right {
   float: right;
+  font-weight: bold;
 }
 
 .nav-header {
