@@ -9,6 +9,11 @@ body {
 	padding-top: 107px;
 }
 
+
+.navbar ul li {
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
 p{
 	font-size: 16pt;
 	line-height: 20pt;
