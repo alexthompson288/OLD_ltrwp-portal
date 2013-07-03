@@ -9,6 +9,11 @@ body {
 	padding-top: 107px;
 }
 
+
+.navbar ul li {
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
 p{
 	font-size: 16pt;
 	line-height: 20pt;
@@ -145,6 +150,10 @@ a#logo-symbol-link:hover{
 
 .shadow-top{
 	background: url("../img/download_shadow_container.png") top center no-repeat;
+}
+
+.shadow-top-960{
+	background: url("../img/download_shadow_container_960px.png") top center no-repeat;
 }
 
 .yellow-background{
@@ -803,6 +812,18 @@ header {
 	background: url('../img/socialicons_h.png') no-repeat;
 	width: 265px;
 	height: 36px;
+}
+
+#footer h5 {
+	color: red;
+}
+
+#footer h5 a {
+    color:red;
+}
+
+#footer p a {
+	color:grey;
 }
 
 /* Global
