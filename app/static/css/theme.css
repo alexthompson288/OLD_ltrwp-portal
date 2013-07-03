@@ -699,6 +699,18 @@ header {
 	height: 36px;
 }
 
+#footer h5 {
+	color: red;
+}
+
+#footer h5 a {
+    color:red;
+}
+
+#footer p a {
+	color:grey;
+}
+
 /* Global
 -------------------------------------------------- */
 .page_header {
