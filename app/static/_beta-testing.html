@@ -38,10 +38,7 @@
                         <li><a href="_features.html">FEATURES</a></li>
                         <li><a href="_download.html">DOWNLOAD</a></li>
                         <li><a href="_about-us.html">ABOUT</a></li>
-<<<<<<< HEAD
                         <li><a href="_education-for-parents.html">FOR PARENTS</a></li>
-=======
->>>>>>> 953c81d4285d234e0377f25c93a5eca789546429
                         <li><a href="_login.html">LOGIN</a></li>
                     </ul>
                 </div>
@@ -101,6 +98,49 @@
                
                     <!--End mc_embed_signup-->
                     
+                </div>
+                <br />
+                <div class="span3"></div>
+
+                <div class="span5">
+                    <div class="position-relative fruitmachine-letters">
+                        <img id="play-audio" style=""src="assets/fruitmachine_website/fruitmachine_body_dog_with_arrows.png">
+                        
+                        
+
+                       
+                        <audio id="audio1" src="assets/fruitmachine_website/d.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-3-single" onClick="EvalSound('audio1')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                            
+
+                            <audio id="audio2" src="assets/fruitmachine_website/o.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-4-single" onClick="EvalSound('audio2')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                            
+
+
+                            <audio id="audio3" src="assets/fruitmachine_website/g.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-5-single" onClick="EvalSound('audio3')"><img src="assets/fruitmachine_website/button_master_statea.png"></a>
+                           
+
+
+                        <audio id="audio4" src="assets/fruitmachine_website/dog.wav"  preload="auto" autobuffer>
+                        </audio>       
+                            <a class="fruitmachine-button fruitmachine-button-play" onClick="EvalSound('audio4')"><img src="assets/fruitmachine_website/play_button.png"></a>  
+                    </div>
+   
+                   <script>
+                        function EvalSound(soundobj) {
+                            var thissound=document.getElementById(soundobj);
+                            thissound.play();
+                        }
+                    </script>
+
+                    <br />
+                   
+
                 </div>
 
             </div>
