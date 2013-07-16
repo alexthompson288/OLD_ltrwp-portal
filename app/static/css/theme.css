@@ -1002,6 +1002,7 @@ header {
 
 @media (max-width : 768px){
 	
+		
 
 		.red-border{
 		margin-top: 20px;
@@ -1078,5 +1079,11 @@ header {
 	.homepage-frame-banner{
 		padding-top: 0px;
 	}
+
+	.fruitmachine-button-3-single{
+			position: absolute;
+			bottom: 140px;
+			right: 126px;
+		}
 
 }
