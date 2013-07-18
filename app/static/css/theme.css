@@ -991,6 +991,73 @@ header {
 
 }
 
+
+
+/* Media queries - 1024px
+------------------*/
+.red-border{
+		margin: 10px 20px;
+		padding: 20px;
+	}
+
+.homepage-frame-banner{
+		padding-top: 0px;
+	}
+
+	/* Media queries - 980px
+------------------*/
+
+@media (max-width : 980px){
+.red-border{
+		margin: 10px 20px;
+		padding: 20px;
+	}
+
+	#logo-symbol{
+	width: 145px;
+	float: left;
+	}
+
+	a#logo-symbol-link{
+	background: url('../img/logo_top_corner_40px_height_sprite.png') no-repeat;
+	width: 58px;
+	height: 18px;
+	}
+
+	a#logo-symbol-link:hover{
+	background-position: 0 -40px;
+	}
+
+	.homepage-frame-banner{
+		padding-top: 0px;
+	}
+
+	.fruitmachine-button-3-single{
+			position: absolute;
+			bottom: 135px;
+			right: 126px;
+		}
+
+	.fruitmachine-button-4-single{
+			position: absolute;
+			bottom: 135px;
+			right: 100px;
+		}
+		
+	.fruitmachine-button-5-single{
+			position: absolute;
+			bottom: 135px;
+			right: 74px;
+		}	
+
+	.fruitmachine-button-play{
+		    position: absolute;
+			bottom: 210px;
+			right: 103px;
+	}		
+
+}
+
 /* Media queries - Ipad
 ------------------*/
 
@@ -1039,51 +1106,28 @@ header {
 	.sky-blue-background{
 		background: none;
 	}
-}
-
-/* Media queries - 1024px
-------------------*/
-.red-border{
-		margin: 10px 20px;
-		padding: 20px;
-	}
-
-.homepage-frame-banner{
-		padding-top: 0px;
-	}
-
-	/* Media queries - 980px
-------------------*/
-
-@media (max-width : 980px){
-.red-border{
-		margin: 10px 20px;
-		padding: 20px;
-	}
-
-	#logo-symbol{
-	width: 145px;
-	float: left;
-	}
-
-	a#logo-symbol-link{
-	background: url('../img/logo_top_corner_40px_height_sprite.png') no-repeat;
-	width: 58px;
-	height: 18px;
-	}
-
-	a#logo-symbol-link:hover{
-	background-position: 0 -40px;
-	}
-
-	.homepage-frame-banner{
-		padding-top: 0px;
-	}
 
 	.fruitmachine-button-3-single{
 			position: absolute;
-			bottom: 140px;
-			right: 126px;
+			bottom: 220px;
+			right: 310px;
 		}
 
+	.fruitmachine-button-4-single{
+			position: absolute;
+			bottom: 220px;
+			right: 278px;
+		}
+		
+	.fruitmachine-button-5-single{
+			position: absolute;
+			bottom: 220px;
+			right: 245px;
+		}	
+
+	.fruitmachine-button-play{
+		    position: absolute;
+			bottom: 336px;
+			right: 282px;
+	}	
 }
