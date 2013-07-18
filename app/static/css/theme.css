@@ -945,51 +945,7 @@ header {
 -------------------------------------------------- */
 
 
-/* Media queries - Iphone
-------------------*/
-@media (max-width: 480px) {
 
-	
-
-	.red-border{
-		margin-top: 20px;
-		padding: 20px;
-	}
-
-	.small-device-banner{
-		display: block;
-	}
-
-	.container{
-		padding: 20px;
-	}
-
-	.iphone-beta-test{
-		display: block;
-	}
-
-	.video-frame{
-		background: url("../img/features_video_frame_iphone.png") no-repeat;
-	}
-
-	.video-frame iframe {
-		padding-top: 64px;
-		padding-left: 55.5px;
-		padding-right: 62.5px;
-	}
-
-	.red-border{
-		display:none;
-	}
-
-	#fpanels.homepage .head{
-		padding-top: 0px !important;
-	}
-
-
-
-
-}
 
 
 
@@ -1130,4 +1086,60 @@ header {
 			bottom: 336px;
 			right: 282px;
 	}	
+}
+
+/* Media queries - Iphone
+------------------*/
+@media only screen and  (min-device-width : 320px) and (max-device-width : 480px){
+
+	.red-border{
+		margin-top: 20px;
+		padding: 20px;
+	}
+
+	.small-device-banner{
+		display: block;
+	}
+
+	.container{
+		padding: 20px;
+	}
+
+	.iphone-beta-test{
+		display: block;
+	}
+
+	.video-frame{
+		background: url("../img/features_video_frame_iphone.png") no-repeat;
+	}
+
+	.video-frame iframe {
+		padding-top: 64px;
+		padding-left: 55.5px;
+		padding-right: 62.5px;
+	}
+
+	.red-border{
+		display:none;
+	}
+
+	#fpanels.homepage .head{
+		padding-top: 0px !important;
+	}
+
+	.fruitmachine-button-3-single{
+			display:none;
+		}
+
+	.fruitmachine-button-4-single{
+			display:none;
+		}
+		
+	.fruitmachine-button-5-single{
+			display:none;
+		}	
+
+	.fruitmachine-button-play{
+		    display:none;
+	}
 }
