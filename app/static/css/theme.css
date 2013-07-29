@@ -186,6 +186,23 @@ a#logo-symbol-link:hover{
 	height: 340px;
 }
 
+.orange-font{
+	color:#ea6530;
+}
+
+.red-font{
+	color:#ed1c24;
+}
+
+.yellow-font{
+	color:#fad047;
+}
+
+.blue-font{
+	color:#4ba9df;
+}
+
+
 /*  Homepage
 --------------------------------------------------*/
 
@@ -195,6 +212,36 @@ a#logo-symbol-link:hover{
 
 .iphone-beta-test{
 	display:none;
+}
+
+#splash-banner-homepage{
+	display:none;
+	position: relative;
+	top:-505px;
+
+
+}
+
+.homepage-not-ready-banner{
+	position:absolute;
+	z-index: 20;
+	text-align:center;
+	width: 100%;
+
+}
+
+.homepage-slider-headline{
+	position:absolute;
+	top:360px;
+	z-index: 20;
+	text-align:center;
+	width: 100%;
+}
+
+.homepage-slider-headline h2{
+	color: #fff;
+    font-size: 48px;
+    font-weight: normal;
 }
 
   /*Parent education page
