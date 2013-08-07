@@ -1,0 +1,46 @@
+.score-circle{
+	background: url('../assets/game_score_circle.png') no-repeat;
+	width: 40px;
+	height: 41px;
+}
+
+#measurelevel table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#measurelevel td{
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+	margin-left: 50px;
+	padding: 20px;
+}
+
+#measurelevel .navbar{
+	margin-bottom: 0px;}
+
+
+#measurelevel #fpanels{
+	height: auto;
+	
+}
+
+#measurelevel .not-ready-yet{
+	height: auto;
+	padding-top: 20px;
+}
+
+#canvas_comparison{
+	display:none;
+}
+
+#myTabContent{
+	background-color:white;
+	padding-bottom: 40px;
+
+}
+
+#measurelevel #myTab{
+	margin-bottom: 0px;
+}
