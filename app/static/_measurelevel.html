@@ -56,7 +56,7 @@
 
     <div id="fpanels">
         <div class="not-ready-yet">
-            <h1>Measure and evaluate your child's reading level</h1>
+            <h1>Measure and evaluate your child's reading level</h1><a href="_download.html" class="right btn btn-large btn-success">Try the learning apps</a>
             
 
             <ul id="myTab" class="nav nav-tabs">
@@ -66,14 +66,30 @@
             </ul>
             <div id='myTabContent' class='tab-content'>
                 <div id='comparison' class="tab-pane fade active in">
-                    <h1>Compare your child against others of the same age</h1>
-                    <form action='' id='reveal-graph'>
-                        <input type='text' value='score'></input>
-                        <br />
-                        <input type='text' value='age'></input>
-                        <br />
-                        <input type='submit' value='See the graph'></input>
-                    </form>
+                    <div class="comparison-container-box">
+                        <h1>Compare your child against others of the same age</h1>
+                        <form action='' id='reveal-graph'>
+                            <input type='text' placeholder='Enter score here'></input>
+                            <br />
+                            <select>
+                                <option selected>Choose your child's age</option>
+                                <option>3 years</option>
+                                <option>3.5 years</option>
+                                <option>4 years</option>
+                                <option>4.5 years</option>
+                                <option>5 years</option>
+                                <option>5.5 years</option>
+                                <option>6 years</option>
+                            </select>
+                            <br />
+                            <input type='submit' value='See the graph' class='btn btn-large btn-success'></input>
+                        </form>
+                        <div id="comparison-information">
+                            <p id="fade-first">Congratulations!</p>
+                            <p id='fade-second'>Your child is in the top</p>
+                            <p id='fade-third'>10% of children of the same age who have done the test.</p>
+                        </div>
+                    </div>
 
                     <canvas id="canvas_comparison" width="900" height="400"></canvas>
                 </div>

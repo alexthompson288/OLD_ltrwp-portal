@@ -12,6 +12,9 @@ $(document).ready(function(){
 	$('#reveal-graph').submit(function(){
   		
   		$('#canvas_comparison').fadeIn('slow');
+  		$('#fade-first').delay(1000).fadeIn('slow');
+  		$('#fade-second').delay(2000).fadeIn('slow');
+  		$('#fade-third').delay(3000).fadeIn('5000');
   		return false;
   	});
 	

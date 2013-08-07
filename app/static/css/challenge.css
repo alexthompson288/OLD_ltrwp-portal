@@ -44,3 +44,18 @@
 #measurelevel #myTab{
 	margin-bottom: 0px;
 }
+
+.comparison-container-box{
+	padding: 40px;
+	border: 2px #66cc99 solid;
+	width: 70%;
+	margin: 20px auto;
+}
+
+#comparison-information{
+
+}
+
+#fade-first, #fade-second, #fade-third{
+	display:none;
+}
