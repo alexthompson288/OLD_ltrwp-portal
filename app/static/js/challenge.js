@@ -31,6 +31,28 @@
 //  
 
  -->
+
+ var words = [ 
+
+{
+
+
+word: 'sun', 
+phonemes: { 
+'n':'n_n_naughty nose', 's':'s_s_sneaky snake', 'u':'uh_u_ugly umbrella' } 
+} ,
+ {
+
+word: 'cat', 
+phonemes: { 
+'a':'a_a_angry ant', 'c':'ck_c_clumsy clown', 't':'t_t_terrible troll' } 
+} , {
+word: 'dog', 
+phonemes: { 
+'d':'d_d_dangerous dragon', 'g':'g_g_grinning goat', 'o':'o_o_odd octopus' } 
+} ]
+
+
 $(document).ready(function(){
  console.log('hello');
  $('#picture-frame-left').show().animate({'top':'0px'},1000,'easeOutBounce');
@@ -44,19 +66,63 @@ $(document).ready(function(){
  $("#picture-frame-right").click(function(){
  	$(this).slideUp(1000);
  });
+
 });
 
-var words = [
-	{
-		word: 'cat',
-		phonemes: ['c','a','t'],
-		state: 'target'
-	},
+// function sayHello(){
+// 	alert(words[1].word);
+// }
+// sayHello();
 
-	{
-		word: 'dog',
-		phonemes: ['d','o','g'],
-		state: 'dummy'
+
+function chooseCorrectWord(){
+
+	var min = 0;
+	var max = words.length-1;
+	
+	// and the formula is:
+	var random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+	var correctWord = words[random].word;
+	
+
+	var random1 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+	var incorrectWord = words[random1].word;
+	if (incorrectWord === correctWord){
+		incorrectWord = words[Math.floor(Math.random() * (max - min + 1)) + min].word;
 	}
-]
+	
+
+	function writeWordsToFruitmachine(){
+		$('#correct-word-position').text(correctWord);
+
+		
+	}
+
+	function addImagesToFrames(){
+		$('#game-image-left').attr('src','assets/game/game_images/_'+correctWord+'.png')
+		$('#game-image-right').attr('src','assets/game/game_images/_'+incorrectWord+'.png')
+	}
+
+
+
+	writeWordsToFruitmachine();
+	addImagesToFrames();
+}
+
+
+
+
+chooseCorrectWord();
+
+
+
+
+
+
+
+
+
+
 
