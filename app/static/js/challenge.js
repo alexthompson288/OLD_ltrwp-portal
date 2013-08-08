@@ -53,13 +53,18 @@ phonemes: {
 } ]
 
 
+ function EvalSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+ }
+                    
+
+
 $(document).ready(function(){
  console.log('hello');
  $('#picture-frame-left').show().animate({'top':'0px'},1000,'easeOutBounce');
  $('#picture-frame-right').delay('500').show().animate({'top':'0px'},1000,'easeOutBounce');
  $('#fruitmachine-body').delay('500').show().animate({'bottom':'0px'},2000,'easeOutBounce');
- $('#progress-bar').fadeIn(2500);
-
 
  $("#picture-frame-left").click(function(){
  	$(this).slideUp(1000);
@@ -70,16 +75,6 @@ $(document).ready(function(){
  });
 
 });
-
-var MoveBar = 0;
-
-$(".btn").click(function(){
-	MoveBar = setInterval(function(){
-  			$("#timer-progress-bar").animate({top: "+=0.1"},10)}, 10)
-	});
-
-
-
 
 // function sayHello(){
 // 	alert(words[1].word);
@@ -106,22 +101,58 @@ function chooseCorrectWord(){
 	}
 	
 
-	function writeWordsToFruitmachine(){
-		$('#correct-word-position').text(correctWord);
 
+	function writeWordsToFruitmachine(){
 		
+		
+		var length = correctWord.length;
+		
+		for (var i=0; i<length; i++){
+			var p = i+1;
+
+			$('#word-container-'+ p +' p').text(correctWord[i]);
+			
+		}
 	}
+
 
 	function addImagesToFrames(){
-		$('#game-image-left').attr('src','assets/game/game_images/_'+correctWord+'.png')
-		$('#game-image-right').attr('src','assets/game/game_images/_'+incorrectWord+'.png')
+		$('#game-image-left').attr('src','assets/game/game_images/_'+correctWord+'.png');
+		$('#game-image-right').attr('src','assets/game/game_images/_'+incorrectWord+'.png');
+	}
+
+	function addAudioToButtons(){
+
+	$('#audio7').attr('src','assets/game/audio/'+correctWord+'.wav');
+		 }
+	var length = correctWord.length;
+	for (var i=0 ; i < length ; i++){
+		console.log(i);
+		var p = i+1;
+		$('#audio'+p).attr('src','assets/game/audio/'+correctWord[i]+'.wav');
+		console.log('correct letter' +correctWord[i]+'.wav');
+	}
+
+	function checkCorrectWord(){
+		$('.correct-answer-class').on('click', function(){
+			console.log('correct message');
+			$('#flash-message p').text('Correct!');
+		});
+
+		$('.incorrect-answer-class').on('click', function(){
+			console.log('correct message');
+			$('#flash-message p').text('Wrong stupid!');
+		});
 	}
 
 
-
+	addAudioToButtons();
 	writeWordsToFruitmachine();
 	addImagesToFrames();
+	checkCorrectWord();
 }
+
+
 
 
 
