@@ -96,3 +96,22 @@
 	display: none;
 }
 
+#progress-bar{
+	position: absolute;
+	top:240px;
+	right: 30px;
+	display: none;
+	overflow: hidden
+}
+
+
+#timer-progress-bar{
+   position:absolute;
+   display:inherit
+}
+
+#timer-progress-frame{
+	position:relative;
+	display:inherit;
+}
+

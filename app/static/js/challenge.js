@@ -36,6 +36,8 @@ $(document).ready(function(){
  $('#picture-frame-left').show().animate({'top':'0px'},1000,'easeOutBounce');
  $('#picture-frame-right').delay('500').show().animate({'top':'0px'},1000,'easeOutBounce');
  $('#fruitmachine-body').delay('500').show().animate({'bottom':'0px'},2000,'easeOutBounce');
+ $('#progress-bar').fadeIn(2500);
+
 
  $("#picture-frame-left").click(function(){
  	$(this).slideUp(1000);
@@ -45,6 +47,17 @@ $(document).ready(function(){
  	$(this).slideUp(1000);
  });
 });
+
+var MoveBar = 0;
+
+$(".btn").click(function(){
+	MoveBar = setInterval(function(){
+  			$("#timer-progress-bar").animate({top: "+=0.1"},10)}, 10)
+	});
+
+
+
+
 
 var words = [
 	{
