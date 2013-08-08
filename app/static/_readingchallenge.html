@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">
     <link rel="stylesheet" href="css/_fpanels.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/challenge.css" type="text/css" media="screen" />
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -53,44 +54,22 @@
       </div>
     </div>
 <script src='js/chart.js'></script>
-    <div id="fpanels">
+    <div id="fpanels" class='reading-challenge'>
         <div class="not-ready-yet">
-            <!doctype html>
+            <div class="container">
+               <div id="play-game-button">
+                    <a href="#" class="btn btn-large btn-success">Play game</a>
+               </div>
 
-       
+               <div id="game-frame">
+                <a href='#'><img src='assets/game/pictureframe_left.png' id='picture-frame-left'></a>
+                
+                 <a href='#'><img src='assets/game/pictureframe_right.png' id='picture-frame-right'></a>
+                
+                 <a href='#'><img src='assets/fruitmachine_website/fruitmachine_body.png' id='fruitmachine-body'></a>
 
-   
-        <canvas id="canvas" height="450" width="600"></canvas>
-
-
-    <script>
-
-        var lineChartData = {
-            labels : ["January","February","March","April","May","June","July"],
-            datasets : [
-                {
-                    fillColor : "rgba(220,220,220,0.5)",
-                    strokeColor : "rgba(220,220,220,1)",
-                    pointColor : "rgba(220,220,220,1)",
-                    pointStrokeColor : "#fff",
-                    data : [65,59,90,81,56,55,40]
-                },
-                {
-                    fillColor : "rgba(151,187,205,0.5)",
-                    strokeColor : "rgba(151,187,205,1)",
-                    pointColor : "rgba(151,187,205,1)",
-                    pointStrokeColor : "#fff",
-                    data : [28,48,40,19,96,27,100]
-                }
-            ]
-
-        }
-
-    var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
-
-    </script>
-
-            
+               </div>
+            </div>            
         </div>
 
     </div>
@@ -192,8 +171,12 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/theme.js"></script>
     <script src='js/chart.js'></script>
+    <script src='js/challenge.js'></script>
+
+
 
 </body>
 </html>
