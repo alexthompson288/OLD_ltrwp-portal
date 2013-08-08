@@ -244,6 +244,17 @@ a#logo-symbol-link:hover{
     font-weight: normal;
 }
 
+.video-container-homepage{
+	margin-top: 30px;
+	background: url("../assets/video-board.png") no-repeat;
+	width: 980px;
+	height: 814px;
+}
+
+.video-container-homepage iframe{
+	margin-top: 178px;
+}
+
   /*Parent education page
   ------------------------------------------------*/
 
@@ -1067,6 +1078,9 @@ header {
 @media (max-width : 767px){
 			.small-device-banner{
 		display: block;
+		}
+		.video-container-homepage{
+			display:none;
 		}
 	}
 
