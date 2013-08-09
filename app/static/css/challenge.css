@@ -126,10 +126,34 @@
 	position:relative;
 	display:inherit;
 
+}
+
 #correct-word-position{
 	position: absolute;
 	font-size: 36pt;
 	top: 100px;
 	left: 100px;
 }
+
+#displayCounter{
+        z-index:100;
+        position: absolute;
+        top: 195px;
+        left: 396px;
+        font-size:42px;
+}
+
+
+#score{
+        position: absolute;
+        height: 81px;
+        width: 81px;
+}
+
+#game-score-circle{
+        position: relative;
+        top: 166px;
+        left: 367px;
+}
+
 

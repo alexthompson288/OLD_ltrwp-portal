@@ -31,6 +31,8 @@
 //  
 
  -->
+ //For the number of times the button has been clicked.
+var cnt = 0;
 
  var words = [ 
 
@@ -69,9 +71,13 @@ $(document).ready(function(){
  	$(this).slideUp(1000);
  });
 
+$(".btn").click(function(){
+        cnt++;
+        $('#displayCounter').html(cnt);           
+        });
+      
 });
 
-var MoveBar = 0;
 
 $(".btn").click(function(){
 	MoveBar = setInterval(function(){
@@ -121,6 +127,10 @@ function chooseCorrectWord(){
 
 	writeWordsToFruitmachine();
 	addImagesToFrames();
+
+
+
+	 
 }
 
 
