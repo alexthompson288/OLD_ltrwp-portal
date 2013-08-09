@@ -70,6 +70,7 @@
 	background-color: white;
 	position: relative;
 	background: url('../assets/game/alien_bg_game.png') no-repeat;
+	overflow: hidden
 }
 
 .reading-challenge .not-ready-yet{
@@ -199,6 +200,7 @@
         top: 101px;
         left: 383px;
         font-size:42px;
+        display: inherit;
 }
 
 
@@ -206,12 +208,14 @@
         position: absolute;
         height: 81px;
         width: 81px;
+        display:none;
 }
 
 #game-score-circle{
         position: relative;
         top: 70px;
         left: 356px;
+        display: inherit;
 }
 
 #flash-message p{

@@ -64,10 +64,6 @@ phonemes: {
 
 $(document).ready(function(){
  console.log('hello');
- $('#picture-frame-left').show().animate({'top':'0px'},1000,'easeOutBounce');
- $('#picture-frame-right').delay('500').show().animate({'top':'0px'},1000,'easeOutBounce');
- $('#fruitmachine-body').delay('500').show().animate({'bottom':'0px'},2000,'easeOutBounce');
- $('#progress-bar').fadeIn(2500);
 
  $("#picture-frame-left").click(function(){
  	$(this).slideUp(1000);
@@ -75,20 +71,54 @@ $(document).ready(function(){
 
  $("#picture-frame-right").click(function(){
  	$(this).slideUp(1000);
+
+
  });
+         checkCorrectWord();
       
 });
 
 
-$(".btn").click(function(){
-	MoveBar = setInterval(function(){
-  			$("#timer-progress-bar").animate({top: "+=0.1"},10)}, 10)
-	});
+$(".btn").click(Main);
 
 // function sayHello(){
 // 	alert(words[1].word);
 // }
 // sayHello();
+
+
+function Main(){
+    
+	var num_questions = 10;
+	 $('#progress-bar').fadeIn(2500);
+	 $('#score').fadeIn(2500);
+	setInterval(function(){
+  		$("#timer-progress-bar").animate({top: "+=0.1"},10)}, 10)
+	for (var i = 0; i < num_questions ; i++) {
+	 	setUpScreen();
+
+        takeOutScreen();
+	 }
+}
+
+
+function setUpScreen(){
+	$('#picture-frame-left').show().animate({'top':'0px'},1000,'easeOutBounce');
+    $('#picture-frame-right').delay('500').show().animate({'top':'0px'},1000,'easeOutBounce');
+    $('#fruitmachine-body').delay('500').show().animate({'bottom':'0px'},2000,'easeOutBounce');
+	chooseCorrectWord();
+	writeWordsToFruitmachine();
+	addImagesToFrames();
+	addAudioToButtons();
+	
+}
+
+function takeOutScreen(){
+	$('#picture-frame-left').animate({'bottom':'0px'},1000,'easeInBounce');
+    $('#picture-frame-right').animate({'bottom':'0px'},1000,'easeInBounce');
+    $('#fruitmachine-body').animate({'top':'0px'},2000,'easeInBounce');
+	
+}
 
 
 function chooseCorrectWord(){
@@ -105,7 +135,7 @@ function chooseCorrectWord(){
 	var random1 = Math.floor(Math.random() * (max - min + 1)) + min;
 
 	var incorrectWord = words[random1].word;
-	if (incorrectWord === correctWord){
+	if (incorrectWord == correctWord){
 		incorrectWord = words[Math.floor(Math.random() * (max - min + 1)) + min].word;
 	}
 	
@@ -149,7 +179,7 @@ function chooseCorrectWord(){
             $('#displayCounter').html(cnt);
 			$('#flash-message p').text('Correct!');
 		});
-
+        
 		$('.incorrect-answer-class').on('click', function(){
 			console.log('correct message');
 			$('#flash-message p').text('Wrong stupid!');
