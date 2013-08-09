@@ -69,6 +69,7 @@
 	height: 600px;
 	background-color: white;
 	position: relative;
+	background: url('../assets/game/alien_bg_game.png') no-repeat;
 }
 
 .reading-challenge .not-ready-yet{
@@ -104,8 +105,65 @@
 #fruitmachine-body{
 	position: absolute;
 	bottom: -300px;
-	left: 240px;
+	
 	display: none;
+}
+
+.word-container-class{
+	position:absolute;
+	top: 346px;
+	height: 220px;
+}
+
+.sound-button-game-class{
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+
+}
+
+#sound-button-1{
+	
+}
+
+#sound-button-2{
+	
+}
+
+#sound-button-3{
+	
+}
+
+#play-button-game{
+	position: absolute;
+	top: 280px;
+	left: 380px;
+}
+
+.word-container-class p{
+	position: absolute;
+	font-size: 70pt;
+	bottom: 140px;
+	left: 10px;
+}
+
+#word-container-1{
+	left: 185px;
+}
+#word-container-2{
+	left: 255px;
+}
+#word-container-3{
+	left: 325px;
+}
+#word-container-4{
+	left: 395px;
+}
+#word-container-5{
+	left: 465px;
+}
+#word-container-6{
+	left: 535px;
 }
 
 #progress-bar{
@@ -138,8 +196,8 @@
 #displayCounter{
         z-index:100;
         position: absolute;
-        top: 195px;
-        left: 396px;
+        top: 101px;
+        left: 383px;
         font-size:42px;
 }
 
@@ -152,8 +210,11 @@
 
 #game-score-circle{
         position: relative;
-        top: 166px;
-        left: 367px;
+        top: 70px;
+        left: 356px;
 }
 
-
+#flash-message p{
+	font-size: 80pt;
+	margin: 20px;
+}

@@ -61,25 +61,93 @@
                     <a href="#" class="btn btn-large btn-success">Play game</a>
                </div>
 
+               <div id="flash-message"><p></p></div>
+
                <div id="game-frame">
-                <div id='picture-frame-left'>
+                <div id="fruitmachine-body">
+                <p id="correct-word-position"></p>
+                 
+                    <img src='assets/game/fruitmachine/special_fruitmachine_farm_0_body_zoom.png' class='' id="">
+
+                    <div id='play-button-game'>
+                        <audio id="audio7" src=""  preload="auto" autobuffer>
+                        </audio>
+                        <a href="#" class="fruitmachine-button" id='play-button-push' onClick="EvalSound('audio7')"><img src='assets/game/fruitmachine/play_button.png'></a>   
+                    </div>
+
+                    <div class='word-container-class' id="word-container-1">
+                        <img src='assets/game/fruitmachine/special_fruitmachine_farm_0_letterslot_single_zoom.png'><p></p>
+                        <audio id="audio1" src=""  preload="auto" autobuffer>
+                        </audio>
+                        <a href="#" class="fruitmachine-button" id='play-button-push' onClick="EvalSound('audio1')">
+                            <img class="sound-button-game-class" id="sound-button-1"  src='assets/game/fruitmachine/general_button_soundbutton_single_statea.png'>
+                        </a>
+                    </div>
+
+                    <div class='word-container-class' id="word-container-2">
+                        <img src='assets/game/fruitmachine/special_fruitmachine_farm_0_letterslot_single_zoom.png'>
+                        <p></p>
+                        <audio id="audio2" src=""  preload="auto" autobuffer>
+                        </audio>
+                        <a href="#" class="fruitmachine-button" id='play-button-push' onClick="EvalSound('audio2')">
+                            <img class="sound-button-game-class" id="sound-button-2"  src='assets/game/fruitmachine/general_button_soundbutton_single_statea.png'>
+                        </a>
+                    </div>
+
+                    <div class='word-container-class' id="word-container-3">
+                        <img src='assets/game/fruitmachine/special_fruitmachine_farm_0_letterslot_single_zoom.png' >
+                        <p></p>
+                        <audio id="audio3" src=""  preload="auto" autobuffer>
+                        </audio>
+                        <a href="#" class="fruitmachine-button" id='play-button-push' onClick="EvalSound('audio3')">
+                            <img class="sound-button-game-class" id="sound-button-3"  src='assets/game/fruitmachine/general_button_soundbutton_single_statea.png'>
+                        </a>
+                    </div>
+
+                    <div class='word-container-class' id="word-container-4">
+                        <img src='assets/game/fruitmachine/special_fruitmachine_farm_0_letterslot_single_zoom.png'>
+                        <audio id="audio4" src=""  preload="auto" autobuffer>
+                        </audio>
+                        <a href="#" class="fruitmachine-button" id='play-button-push' onClick="EvalSound('audio4')">
+                            <img class="sound-button-game-class" id="sound-button-4"  src='assets/game/fruitmachine/general_button_soundbutton_single_statea.png'>
+                        </a>
+                    </div>
+
+                    <div class='word-container-class' id="word-container-5">
+                        <img src='assets/game/fruitmachine/special_fruitmachine_farm_0_letterslot_single_zoom.png' >
+                        <audio id="audio5" src=""  preload="auto" autobuffer>
+                        </audio>
+                        <a href="#" class="fruitmachine-button" id='play-button-push' onClick="EvalSound('audio5')">
+                            <img class="sound-button-game-class" id="sound-button-5"  src='assets/game/fruitmachine/general_button_soundbutton_single_statea.png'>
+                        </a>
+                    </div>
+
+                    <div class='word-container-class' id="word-container-6">
+                        <img src='assets/game/fruitmachine/special_fruitmachine_farm_0_letterslot_single_zoom.png' >
+                        <audio id="audio6" src=""  preload="auto" autobuffer>
+                        </audio>
+                        <a href="#" class="fruitmachine-button" id='play-button-push' onClick="EvalSound('audio6')">
+                            <img class="sound-button-game-class" id="sound-button-6"  src='assets/game/fruitmachine/general_button_soundbutton_single_statea.png'>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div id='picture-frame-left' class="correct-answer-class">
                     <a href='#'>
                         <img src='assets/game/pictureframe_left.png'>
                         <img src='' id='game-image-left'>
                     </a>
                 </div>
                 
-                <div id='picture-frame-right'>
+                <div id='picture-frame-right' class='incorrect-answer-class'>
                  <a href='#'>
                     <img src='assets/game/pictureframe_right.png'>
                     <img src='' id='game-image-right'>
                 </a>
                 </div>
                 
-                <div id="fruitmachine-body">
-                <p id="correct-word-position"></p>
-                
-                </div>
+
                 <div id="progress-bar">
                     <img src='assets/game/progress_orange_small.png' id='timer-progress-bar' />
                     <img src='assets/game/progress_frame_small.png' id='timer-progress-frame'/>
