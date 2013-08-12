@@ -195,7 +195,6 @@
 }
 
 #displayCounter{
-        z-index:100;
         position: absolute;
         top: 101px;
         left: 383px;

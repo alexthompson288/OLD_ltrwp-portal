@@ -65,21 +65,28 @@ phonemes: {
 $(document).ready(function(){
  console.log('hello');
 
- $("#picture-frame-left").click(function(){
- 	$(this).slideUp(1000);
+ $("#picture-frame-left").click(function(event){
+    event.stopPropagation();
+    $(this).animate({'top':'-500px'},500);
+    $('#picture-frame-right').animate({'top':'-500px'},500);
+    $(this).parent().find('#fruitmachine-body').animate({'bottom':'-500px'},500);
+    setUpScreen();
  });
 
- $("#picture-frame-right").click(function(){
- 	$(this).slideUp(1000);
+ $("#picture-frame-right").click(function(event){
+ 	event.stopPropagation();
+    $(this).animate({'top':'-500px'},500);
+    $('#picture-frame-left').animate({'top':'-500px'},500);
+    $(this).parent().find('#fruitmachine-body').animate({'bottom':'-500px'},500);
+    setUpScreen();
+  });
 
-
- });
-         checkCorrectWord();
+ $(".btn").click(Main);
       
 });
 
 
-$(".btn").click(Main);
+
 
 // function sayHello(){
 // 	alert(words[1].word);
@@ -89,37 +96,26 @@ $(".btn").click(Main);
 
 function Main(){
     
-	var num_questions = 10;
-	 $('#progress-bar').fadeIn(2500);
-	 $('#score').fadeIn(2500);
+	$('#progress-bar').fadeIn(2500);
+	$('#score').fadeIn(2500);
 	setInterval(function(){
-  		$("#timer-progress-bar").animate({top: "+=0.1"},10)}, 10)
-	for (var i = 0; i < num_questions ; i++) {
-	 	setUpScreen();
-
-        takeOutScreen();
-	 }
+  		$("#timer-progress-bar").animate({top: "+=0.1"},10)}, 10);    
+	setUpScreen();
 }
 
 
 function setUpScreen(){
+	
 	$('#picture-frame-left').show().animate({'top':'0px'},1000,'easeOutBounce');
     $('#picture-frame-right').delay('500').show().animate({'top':'0px'},1000,'easeOutBounce');
     $('#fruitmachine-body').delay('500').show().animate({'bottom':'0px'},2000,'easeOutBounce');
-	chooseCorrectWord();
-	writeWordsToFruitmachine();
-	addImagesToFrames();
-	addAudioToButtons();
-	
+	chooseCorrectWord();	
 }
+
 
 function takeOutScreen(){
-	$('#picture-frame-left').animate({'bottom':'0px'},1000,'easeInBounce');
-    $('#picture-frame-right').animate({'bottom':'0px'},1000,'easeInBounce');
-    $('#fruitmachine-body').animate({'top':'0px'},2000,'easeInBounce');
-	
-}
 
+}
 
 function chooseCorrectWord(){
 
@@ -135,7 +131,7 @@ function chooseCorrectWord(){
 	var random1 = Math.floor(Math.random() * (max - min + 1)) + min;
 
 	var incorrectWord = words[random1].word;
-	if (incorrectWord == correctWord){
+	while(incorrectWord == correctWord){
 		incorrectWord = words[Math.floor(Math.random() * (max - min + 1)) + min].word;
 	}
 	
@@ -163,26 +159,30 @@ function chooseCorrectWord(){
 	function addAudioToButtons(){
 
 	$('#audio7').attr('src','assets/game/audio/'+correctWord+'.wav');
-		 }
+		 
 	var length = correctWord.length;
-	for (var i=0 ; i < length ; i++){
-		console.log(i);
-		var p = i+1;
-		$('#audio'+p).attr('src','assets/game/audio/'+correctWord[i]+'.wav');
-		console.log('correct letter' +correctWord[i]+'.wav');
-	}
+		for (var i=0 ; i < length ; i++){
+			var p = i+1;
+			$('#audio'+p).attr('src','assets/game/audio/'+correctWord[i]+'.wav');
+			console.log('correct letter' +correctWord[i]+'.wav');
+		}
+    }
+
 
 	function checkCorrectWord(){
-		$('.correct-answer-class').on('click', function(){
+		$('.correct-answer-class').one('click', function(){
 			console.log('correct message');
 			cnt++;
+			console.log(cnt);
             $('#displayCounter').html(cnt);
 			$('#flash-message p').text('Correct!');
+			return false;
 		});
         
-		$('.incorrect-answer-class').on('click', function(){
-			console.log('correct message');
+		$('.incorrect-answer-class').one('click', function(){
+			console.log('incorrect message');
 			$('#flash-message p').text('Wrong stupid!');
+			return false;
 		});
 	}
 
@@ -196,9 +196,6 @@ function chooseCorrectWord(){
 
 
 
-
-
-chooseCorrectWord();
 
 
 
