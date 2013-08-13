@@ -63,7 +63,6 @@ phonemes: {
 
 
 $(document).ready(function(){
- console.log('hello');
 
  $("#picture-frame-left").click(function(event){
     event.stopPropagation();
@@ -99,9 +98,19 @@ function Main(){
 	$('#progress-bar').fadeIn(2500);
 	$('#score').fadeIn(2500);
 	setInterval(function(){
-  		$("#timer-progress-bar").animate({top: "+=0.1"},10)}, 10);    
+		$("#timer-progress-bar").animate({top: "+=0.1"}, {
+            duration: 10,
+			step: function( ){
+				if((345- $('#timer-progress-bar').position().top) < 0) {
+                    alert('Game Over');  //I don't know what to add here. 
+                     //We could either freeze the screen and bring a new page? What say?
+                }
+			}
+		});
+	});    
 	setUpScreen();
 }
+
 
 
 function setUpScreen(){
@@ -112,10 +121,6 @@ function setUpScreen(){
 	chooseCorrectWord();	
 }
 
-
-function takeOutScreen(){
-
-}
 
 function chooseCorrectWord(){
 
@@ -131,6 +136,7 @@ function chooseCorrectWord(){
 	var random1 = Math.floor(Math.random() * (max - min + 1)) + min;
 
 	var incorrectWord = words[random1].word;
+	
 	while(incorrectWord == correctWord){
 		incorrectWord = words[Math.floor(Math.random() * (max - min + 1)) + min].word;
 	}
@@ -150,10 +156,27 @@ function chooseCorrectWord(){
 		}
 	}
 
+    var chosenWords = [];
 
 	function addImagesToFrames(){
-		$('#game-image-left').attr('src','assets/game/game_images/_'+correctWord+'.png');
-		$('#game-image-right').attr('src','assets/game/game_images/_'+incorrectWord+'.png');
+		var sortedWords = [incorrectWord,correctWord]; 
+		
+		var first = Math.floor(Math.random()*2);
+		chosenWords.push(sortedWords[first]);
+		chosenWords.push(sortedWords[(first+1) %2]);
+  		
+
+  		$('#game-image-left').attr('src','assets/game/game_images/_'+chosenWords[0]+'.png');
+        $('#game-image-right').attr('src','assets/game/game_images/_'+chosenWords[1]+'.png');
+
+        if(chosenWords[0] === correctWord){
+        	$('#game-image-left').addClass("correct-answer-class");
+        	$('#game-image-right').addClass("incorrect-answer-class");
+        }else{
+        	$('#game-image-right').addClass("correct-answer-class");
+        	$('#game-image-left').addClass("incorrect-answer-class");
+        }
+        console.log("Classes added");
 	}
 
 	function addAudioToButtons(){
@@ -164,25 +187,24 @@ function chooseCorrectWord(){
 		for (var i=0 ; i < length ; i++){
 			var p = i+1;
 			$('#audio'+p).attr('src','assets/game/audio/'+correctWord[i]+'.wav');
-			console.log('correct letter' +correctWord[i]+'.wav');
 		}
     }
 
 
 	function checkCorrectWord(){
-		$('.correct-answer-class').one('click', function(){
-			console.log('correct message');
+		$('.correct-answer-class').one('click', function(event){
+			event.stopPropagation();
 			cnt++;
-			console.log(cnt);
             $('#displayCounter').html(cnt);
 			$('#flash-message p').text('Correct!');
-			return false;
+
 		});
         
-		$('.incorrect-answer-class').one('click', function(){
+		$('.incorrect-answer-class').one('click', function(event){
+			event.stopPropagation();
 			console.log('incorrect message');
 			$('#flash-message p').text('Wrong stupid!');
-			return false;
+			
 		});
 	}
 
@@ -191,19 +213,12 @@ function chooseCorrectWord(){
 	writeWordsToFruitmachine();
 	addImagesToFrames();
 	checkCorrectWord();
+
+	if(chosenWords[0] === correctWord){
+        	$('#game-image-left').removeClass("correct-answer-class");
+        	$('#game-image-right').removeClass("incorrect-answer-class");
+        }else{
+        	$('#game-image-right').removeClass("correct-answer-class");
+        	$('#game-image-left').removeClass("incorrect-answer-class");
+        }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
