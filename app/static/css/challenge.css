@@ -221,3 +221,23 @@
 	font-size: 80pt;
 	margin: 20px;
 }
+
+
+
+/*GRAPH CSS*/
+
+
+
+#outer {
+  width: 100%;
+  text-align: center;
+}
+
+#inner {
+  display: inline-block;
+}
+
+
+#pip-score{
+	
+}

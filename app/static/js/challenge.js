@@ -102,8 +102,8 @@ function Main(){
             duration: 10,
 			step: function( ){
 				if((345- $('#timer-progress-bar').position().top) < 0) {
-                    alert('Game Over'); //I don't know what to add here. 
-                                        //We could either freeze the screen and ask for the age and name. What do you say? 
+                     var string_url = "_graph.html?" + "score="+cnt; 
+                     window.location = string_url;
                 }
 			}
 		});
@@ -221,3 +221,30 @@ function chooseCorrectWord(){
 
 	
 }
+
+
+
+// GRAPH WORK
+
+var data = {
+	labels : ["4 years","5 years","6 years","7 years","8 years","9 years","10 years"],
+	datasets : [
+		{
+			fillColor : "rgba(151,187,205,0.5)",
+			strokeColor : "rgba(151,187,205,1)",
+			pointColor : "rgba(151,187,205,1)",
+			pointStrokeColor : "#fff",
+			data : [28,40,48,60,69,78,95]
+		},
+		{
+			fillColor : "rgba(220,220,220,0.5)",
+			strokeColor : "rgba(220,220,220,1)",
+			pointColor : "rgba(220,220,220,1)",
+			pointStrokeColor : "#fff",
+			data : []
+		}
+	]
+}
+
+var ctx = document.getElementById("myChart").getContext("2d");
+var myNewChart = new Chart(ctx).Line(data);
