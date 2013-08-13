@@ -102,8 +102,8 @@ function Main(){
             duration: 10,
 			step: function( ){
 				if((345- $('#timer-progress-bar').position().top) < 0) {
-                    alert('Game Over');  //I don't know what to add here. 
-                     //We could either freeze the screen and bring a new page? What say?
+                    alert('Game Over'); //I don't know what to add here. 
+                                        //We could either freeze the screen and ask for the age and name. What do you say? 
                 }
 			}
 		});
@@ -176,7 +176,6 @@ function chooseCorrectWord(){
         	$('#game-image-right').addClass("correct-answer-class");
         	$('#game-image-left').addClass("incorrect-answer-class");
         }
-        console.log("Classes added");
 	}
 
 	function addAudioToButtons(){
@@ -193,7 +192,6 @@ function chooseCorrectWord(){
 
 	function checkCorrectWord(){
 		$('.correct-answer-class').one('click', function(event){
-			event.stopPropagation();
 			cnt++;
             $('#displayCounter').html(cnt);
 			$('#flash-message p').text('Correct!');
@@ -201,11 +199,18 @@ function chooseCorrectWord(){
 		});
         
 		$('.incorrect-answer-class').one('click', function(event){
-			event.stopPropagation();
 			console.log('incorrect message');
-			$('#flash-message p').text('Wrong stupid!');
+			$('#flash-message p').text('Wrong!');
 			
 		});
+
+		if(chosenWords[0] === correctWord){
+        	$('#game-image-left').removeClass("correct-answer-class");
+        	$('#game-image-right').removeClass("incorrect-answer-class");
+        }else{
+        	$('#game-image-right').removeClass("correct-answer-class");
+        	$('#game-image-left').removeClass("incorrect-answer-class");
+        }
 	}
 
 
@@ -214,11 +219,5 @@ function chooseCorrectWord(){
 	addImagesToFrames();
 	checkCorrectWord();
 
-	if(chosenWords[0] === correctWord){
-        	$('#game-image-left').removeClass("correct-answer-class");
-        	$('#game-image-right').removeClass("incorrect-answer-class");
-        }else{
-        	$('#game-image-right').removeClass("correct-answer-class");
-        	$('#game-image-left').removeClass("incorrect-answer-class");
-        }
+	
 }
