@@ -64,13 +64,15 @@
 /* GAME FRAME */
 
 #game-frame{
+	display: hidden;
 	width: 800px;
 	margin: 10px auto;
 	height: 600px;
 	background-color: white;
 	position: relative;
 	background: url('../assets/game/alien_bg_game.png') no-repeat;
-	overflow: hidden
+	overflow: hidden;
+	
 }
 
 .reading-challenge .not-ready-yet{
@@ -196,8 +198,8 @@
 
 #displayCounter{
         position: absolute;
-        top: 101px;
-        left: 383px;
+        top: 99px;
+        left: 381px;
         font-size:42px;
         display: inherit;
 }
@@ -220,24 +222,4 @@
 #flash-message p{
 	font-size: 80pt;
 	margin: 20px;
-}
-
-
-
-/*GRAPH CSS*/
-
-
-
-#outer {
-  width: 100%;
-  text-align: center;
-}
-
-#inner {
-  display: inline-block;
-}
-
-
-#pip-score{
-	
 }

@@ -59,6 +59,9 @@ phonemes: {
     var thissound=document.getElementById(soundobj);
     thissound.play();
  }
+
+
+
                     
 
 
@@ -80,7 +83,14 @@ $(document).ready(function(){
     setUpScreen();
   });
 
- $(".btn").click(Main);
+
+ if(document.getElementById("age").value != ""){
+	 $(".btn").click(function(){
+	 	$('.comparison-container-box').hide();
+	 	console.log("hidden");
+	 	Main();
+	 });
+ }
       
 });
 
@@ -102,7 +112,7 @@ function Main(){
             duration: 10,
 			step: function( ){
 				if((345- $('#timer-progress-bar').position().top) < 0) {
-                     var string_url = "_graph.html?" + "score="+cnt; 
+                     var string_url = "_measurelevel.html?" + "score="+cnt+"&age="+document.getElementById("age").value; 
                      window.location = string_url;
                 }
 			}
@@ -245,6 +255,3 @@ var data = {
 		}
 	]
 }
-
-var ctx = document.getElementById("myChart").getContext("2d");
-var myNewChart = new Chart(ctx).Line(data);

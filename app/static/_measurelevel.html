@@ -57,7 +57,9 @@
     <div id="fpanels">
         <div class="not-ready-yet">
             <h1>Measure and evaluate your child's reading level</h1><a href="_download.html" class="right btn btn-large btn-success">Try the learning apps</a>
-            
+            <FORM NAME="secret">
+                <INPUT TYPE="hidden" NAME="form">
+            </FORM>
 
             <ul id="myTab" class="nav nav-tabs">
                   <li class="active"><a href="#comparison" data-toggle="tab">Comparison</a></li>
@@ -68,10 +70,10 @@
                 <div id='comparison' class="tab-pane fade active in">
                     <div class="comparison-container-box">
                         <h1>Compare your child against others of the same age</h1>
-                        <form action='' id='reveal-graph'>
-                            <input type='text' placeholder='Enter score here'></input>
+                        <form action='' name ='revealgraph' id='reveal-graph'>
+                            <input type='text' name ='score'placeholder='Enter score here'></input>
                             <br />
-                            <select>
+                            <select name='age'>
                                 <option selected>Choose your child's age</option>
                                 <option>3 years</option>
                                 <option>3.5 years</option>

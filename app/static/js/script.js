@@ -22,6 +22,34 @@ $(document).ready(function(){
 });
 
 
+var locate = window.location;
+document.secret.form.value = locate;
+
+var text = document.secret.form.value;
+console.log(text);
+
+function delineate2(str){
+	str = decodeURIComponent(str);
+	theleft = str.lastIndexOf("=") + 1;
+	theright = str.length;
+	return(str.substring(theleft, theright));
+}
+
+function delineate(str){
+	theleft = str.indexOf("=") + 1;
+	theright = str.lastIndexOf("&");
+	return(str.substring(theleft, theright));
+}
+
+
+
+
+document.revealgraph.score.value = delineate(text);
+document.revealgraph.age.value = delineate2(text);
+var score = document.revealgraph.score.value;
+
+
+
 
 var lineChartData = {
     labels : ["3 years","3.5 years","4 years","4.5 years","5 years","5.5 years","6 years"],
@@ -31,14 +59,14 @@ var lineChartData = {
             strokeColor : "rgba(220,220,220,1)",
             pointColor : "rgba(220,220,220,1)",
             pointStrokeColor : "#fff",
-            data : [10,15,22,28,33,36,40]
+            data : [10,12,15,20,25,28,35]
         },
         {
             fillColor : "rgba(151,187,205,0.5)",
             strokeColor : "rgba(151,187,205,1)",
             pointColor : "#FF2900",
             pointStrokeColor : "",
-            data : [,,,,28]
+            data : [,,,,score]
         }
     ]
 
